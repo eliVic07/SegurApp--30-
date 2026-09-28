@@ -9,1149 +9,1066 @@
 
     <title>SegurApp - Inspecciones</title>
 
-    <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
-
-
-    <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
-
-    <link
-        rel="stylesheet"
-        href="CSS/inspecciones.css">
+    <link rel="stylesheet" href="CSS/style.css">
 
 </head>
 
-
 <body>
 
-    <aside class="barra-lateral">
+    <div class="container-fluid">
 
-        <div class="contenedor-logo">
+        <div class="row">
 
-            <img
-                src="logoSegurApp.png"
-                alt="Logo SegurApp"
-                class="logo">
+            <aside class="col-md-3 col-lg-2 bg-dark text-white min-vh-100 p-3">
 
-        </div>
+                <div class="text-center mb-4">
 
-        <nav class="menu-lateral">
-
-
-            <a href="#" class="elemento-menu">
-
-                <i class="bi bi-grid-1x2"></i>
-
-                <span>
-                    Dashboard
-                </span>
-
-            </a>
-
-
-            <a href="#" class="elemento-menu">
-
-                <i class="bi bi-people"></i>
-
-                <span>
-                    Empleados
-                </span>
-
-            </a>
-
-
-            <a href="#" class="elemento-menu">
-
-                <i class="bi bi-book"></i>
-
-                <span>
-                    Capacitaciones
-                </span>
-
-            </a>
-
-
-            <a href="#" class="elemento-menu activo">
-
-                <i class="bi bi-clipboard-check"></i>
-
-                <span>
-                    Inspecciones
-                </span>
-
-            </a>
-
-
-            <a href="#" class="elemento-menu">
-
-                <i class="bi bi-exclamation-triangle"></i>
-
-                <span>
-                    Incidentes y Accidentes
-                </span>
-
-            </a>
-
-
-            <a href="#" class="elemento-menu">
-
-                <i class="bi bi-briefcase"></i>
-
-                <span>
-                    EPP
-                </span>
-
-            </a>
-
-
-            <a href="#" class="elemento-menu">
-
-                <i class="bi bi-shield-exclamation"></i>
-
-                <span>
-                    Riesgos
-                </span>
-
-            </a>
-
-
-            <a href="#" class="elemento-menu">
-
-                <i class="bi bi-folder"></i>
-
-                <span>
-                    Documentos
-                </span>
-
-            </a>
-
-
-            <a href="#" class="elemento-menu">
-
-                <i class="bi bi-bell"></i>
-
-                <span>
-                    Alertas
-                </span>
-
-            </a>
-
-
-            <a href="#" class="elemento-menu">
-
-                <i class="bi bi-bar-chart"></i>
-
-                <span>
-                    Reportes
-                </span>
-
-            </a>
-
-
-            <a href="#" class="elemento-menu">
-
-                <i class="bi bi-gear"></i>
-
-                <span>
-                    Configuración
-                </span>
-
-            </a>
-
-
-        </nav>
-
-    </aside>
-
-    <main class="contenido-principal">
-
-        <header class="barra-superior">
-
-            <div class="buscador-superior">
-
-                <i class="bi bi-search"></i>
-
-                <input
-                    type="text"
-                    placeholder="Buscar...">
-
-            </div>
-
-            <div class="parte-derecha">
-
-                <div class="dropdown">
-
-
-                    <button
-                        class="boton-notificaciones"
-                        type="button"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                        title="Notificaciones">
-
-                        <i class="bi bi-bell"></i>
-
-                        <span class="numero-notificacion">
-                            1
-                        </span>
-
-                    </button>
-
-                    <div class="dropdown-menu dropdown-menu-end panel-notificaciones">
-
-                        <div class="encabezado-notificaciones">
-
-                            <div>
-
-                                <strong>
-                                    Notificaciones
-                                </strong>
-
-                                <small>
-                                    Tienes 1 notificación
-                                </small>
-
-                            </div>
-
-
-                            <span class="cantidad-notificaciones">
-                                1
-                            </span>
-
-                        </div>
-
-                        <div class="notificacion">
-
-
-                            <div class="icono-notificacion">
-
-                                <i class="bi bi-exclamation-triangle"></i>
-
-                            </div>
-
-
-                            <div class="texto-notificacion">
-
-                                <strong>
-                                    Inspección pendiente
-                                </strong>
-
-                                <p>
-                                    La inspección de Arnés y Líneas de Vida está pendiente.
-                                </p>
-
-                                <small>
-                                    Hace 2 horas
-                                </small>
-
-                            </div>
-
-
-                        </div>
-
-                        <div class="pie-notificaciones">
-
-                            <a href="#">
-                                Ver todas las notificaciones
-                            </a>
-
-                        </div>
-
-
-                    </div>
+                    <img
+                        src="IMGS/logo.jpg"
+                        alt="Logo SegurApp"
+                        class="img-fluid mb-2"
+                        style="max-width: 100px;"
+                    >
 
                 </div>
 
-                <div class="dropdown">
+                <nav class="nav flex-column">
+
+                    <a href="index.html" class="nav-link text-white">
+                        ⌂ Dashboard
+                    </a>
+
+                    <a href="empleados.html" class="nav-link text-white">
+                        ♙ Empleados
+                    </a>
+
+                    <a href="#" class="nav-link text-white">
+                        ▣ Capacitaciones
+                    </a>
+
+                    <a href="inspecciones.html" class="nav-link active bg-warning text-dark rounded">
+                        ✓ Inspecciones
+                    </a>
+
+                    <a href="#" class="nav-link text-white">
+                        ⚠ Incidentes y Accidentes
+                    </a>
+
+                    <a href="#" class="nav-link text-white">
+                        ▢ EPP
+                    </a>
+
+                    <a href="#" class="nav-link text-white">
+                        ◇ Riesgos
+                    </a>
+
+                    <a href="#" class="nav-link text-white">
+                        ▤ Documentos
+                    </a>
+
+                    <a href="#" class="nav-link text-white">
+                        ♢ Alertas
+                    </a>
+
+                    <a href="#" class="nav-link text-white">
+                        ▥ Reportes
+                    </a>
+
+                    <a href="#" class="nav-link text-white">
+                        ⚙ Configuración
+                    </a>
+
+                </nav>
+
+            </aside>
 
 
-                    <button
-                        class="usuario"
-                        type="button"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false">
+            <main class="col-md-9 col-lg-10 bg-light min-vh-100 p-0">
 
-                        <div class="avatar">
-                            SG
-                        </div>
+                <nav class="navbar navbar-expand-lg bg-white border-bottom px-4">
 
-                        <div class="informacion-usuario">
+                    <div class="container-fluid">
 
-                            <strong>
-                                SegurApp
-                            </strong>
+                        <div>
 
-                            <small>
-                                Administrador
+                            <h5 class="mb-0">
+                                Inspecciones
+                            </h5>
+
+                            <small class="text-muted">
+                                Monitoreo, control y auditoría de condiciones de trabajo seguras.
                             </small>
 
                         </div>
 
 
-                        <i class="bi bi-chevron-down flecha"></i>
+                        <div class="d-flex align-items-center gap-3">
 
+                            <form class="d-flex">
 
-                    </button>
+                                <input
+                                    class="form-control form-control-sm"
+                                    type="search"
+                                    placeholder="Buscar inspección..."
+                                >
 
-                    <ul class="dropdown-menu dropdown-menu-end menu-usuario">
+                            </form>
 
 
-                        <li>
+                            <span>
+                                🔔
+                            </span>
 
-                            <a
-                                href="#"
-                                class="dropdown-item">
 
-                                <i class="bi bi-person"></i>
+                            <div class="dropdown">
 
-                                Mi perfil
+                                <button
+                                    class="btn btn-light dropdown-toggle d-flex align-items-center gap-2"
+                                    type="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                >
 
-                            </a>
+                                    <span
+                                        class="rounded-circle bg-warning text-dark fw-bold d-flex align-items-center justify-content-center"
+                                        style="width: 40px; height: 40px;"
+                                    >
+                                        SG
+                                    </span>
 
-                        </li>
+                                    <span class="text-start">
 
+                                        <strong class="d-block">
+                                            SegurApp
+                                        </strong>
 
-                        <li>
+                                        <small class="text-muted">
+                                            Administrador
+                                        </small>
 
-                            <a
-                                href="#"
-                                class="dropdown-item">
+                                    </span>
 
-                                <i class="bi bi-gear"></i>
+                                </button>
 
-                                Configuración
 
-                            </a>
+                                <ul class="dropdown-menu dropdown-menu-end shadow">
 
-                        </li>
+                                    <li>
 
+                                        <a
+                                            class="dropdown-item d-flex align-items-center gap-3 py-3"
+                                            href="#"
+                                        >
 
-                        <li>
+                                            <span style="font-size: 28px;">
+                                                ♙
+                                            </span>
 
-                            <hr class="dropdown-divider">
+                                            <span>
 
-                        </li>
+                                                <strong class="d-block">
+                                                    Mi perfil
+                                                </strong>
 
-                        <li>
+                                            </span>
 
-                            <a
-                                href="#"
-                                class="dropdown-item cerrar-sesion"
-                                data-bs-toggle="modal"
-                                data-bs-target="#modalCerrarSesion">
+                                        </a>
 
-                                <i class="bi bi-box-arrow-right"></i>
+                                    </li>
 
-                                Cerrar sesión
 
-                            </a>
+                                    <li>
 
-                        </li>
+                                        <a
+                                            class="dropdown-item d-flex align-items-center gap-3 py-3"
+                                            href="#"
+                                        >
 
+                                            <span style="font-size: 28px;">
+                                                ⚙
+                                            </span>
 
-                    </ul>
+                                            <span>
 
-                </div>
+                                                <strong class="d-block">
+                                                    Configuración
+                                                </strong>
 
+                                            </span>
 
-            </div>
+                                        </a>
 
-        </header>
+                                    </li>
 
-        <section class="encabezado-pagina">
+                                </ul>
 
+                            </div>
 
-            <div>
-
-                <h1>
-                    Inspecciones de Seguridad
-                </h1>
-
-                <p>
-                    Monitoreo, control y auditoría de condiciones de trabajo seguras.
-                </p>
-
-            </div>
-
-
-
-            <!-- INDICADORES -->
-
-            <div class="indicadores">
-
-
-                <div class="indicador">
-
-                    <span>
-                        CUMPLIMIENTO
-                    </span>
-
-                    <strong class="texto-verde">
-                        82.5%
-                    </strong>
-
-                </div>
-
-
-                <div class="indicador">
-
-                    <span>
-                        TOTAL MES
-                    </span>
-
-                    <strong id="totalMes">
-                        6
-                    </strong>
-
-                </div>
-
-
-            </div>
-
-
-        </section>
-
-        <section class="tarjeta-inspecciones">
-
-            <div class="cabecera-tarjeta">
-
-
-                <div class="informacion-registro">
-
-                    <h2>
-                        Registro de Inspecciones
-                    </h2>
-
-                    <p id="textoRegistros">
-                        6 inspecciones encontradas
-                    </p>
-
-                </div>
-
-                <div class="controles">
-
-                    <div class="buscador-inspecciones">
-
-                        <i class="bi bi-search"></i>
-
-                        <input
-                            type="text"
-                            id="buscarInspeccion"
-                            placeholder="Buscar inspección...">
+                        </div>
 
                     </div>
 
-                    <select
-                        id="filtroEstado"
-                        class="filtro-estado">
-
-                        <option value="todos">
-                            Todos los estados
-                        </option>
-
-                        <option value="cumple">
-                            Cumple
-                        </option>
-
-                        <option value="no-cumple">
-                            No Cumple
-                        </option>
-
-                        <option value="pendiente">
-                            Pendiente
-                        </option>
-
-                        <option value="en-proceso">
-                            En Proceso
-                        </option>
-
-                    </select>
-
-                    <button
-                        type="button"
-                        class="boton-nueva"
-                        data-bs-toggle="modal"
-                        data-bs-target="#modalNuevaInspeccion">
-
-                        <i class="bi bi-plus"></i>
-
-                        Nueva inspección
-
-                    </button>
+                </nav>
 
 
-                </div>
+                <section class="container-fluid p-4">
+
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+
+                        <div>
+
+                            <h1 class="fw-bold mb-1">
+                                Inspecciones de Seguridad
+                            </h1>
+
+                            <p class="text-muted mb-0">
+                                Monitoreo, control y auditoría de condiciones de trabajo seguras.
+                            </p>
+
+                        </div>
 
 
-            </div>
+                        <div class="d-flex gap-4">
 
+                            <div class="text-center">
 
-            <div class="tabla-contenedor">
-
-
-                <table class="table tabla-inspecciones">
-
-
-                    <thead>
-
-                        <tr>
-
-                            <th>
-                                ID
-                            </th>
-
-                            <th>
-                                INSPECCIÓN / DETALLE
-                            </th>
-
-                            <th>
-                                TIPO
-                            </th>
-
-                            <th>
-                                FECHA
-                            </th>
-
-                            <th>
-                                INSPECTOR
-                            </th>
-
-                            <th>
-                                RESULTADO
-                            </th>
-
-                        </tr>
-
-                    </thead>
-
-
-
-                    <tbody id="cuerpoTabla">
-
-                        <tr>
-
-                            <td class="id-inspeccion">
-                                INS-06
-                            </td>
-
-                            <td>
-
-                                <strong>
-                                    Inspección de Extintores - Bloque A
-                                </strong>
-
-                                <small>
-                                    SST-Inspecciones
+                                <small class="text-success fw-bold">
+                                    CUMPLIMIENTO
                                 </small>
 
-                            </td>
+                                <h4 class="text-success mb-0">
+                                    82.5%
+                                </h4>
 
-                            <td>
-                                Extintores
-                            </td>
-
-                            <td>
-                                24 Oct 2023
-                            </td>
-
-                            <td>
-                                Carlos Rodríguez
-                            </td>
-
-                            <td>
-
-                                <span class="estado cumple">
-
-                                    <span></span>
-
-                                    Cumple
-
-                                </span>
-
-                            </td>
-
-                        </tr>
+                            </div>
 
 
-                        <tr>
+                            <div class="text-center">
 
-                            <td class="id-inspeccion">
-                                INS-05
-                            </td>
-
-                            <td>
-
-                                <strong>
-                                    Uso de EPP - Personal de Planta
-                                </strong>
-
-                                <small>
-                                    SST-Inspecciones
+                                <small class="text-muted">
+                                    TOTAL MES
                                 </small>
 
-                            </td>
+                                <h4 class="mb-0">
+                                    6
+                                </h4>
 
-                            <td>
-                                EPP
-                            </td>
+                            </div>
 
-                            <td>
-                                23 Oct 2023
-                            </td>
+                        </div>
 
-                            <td>
-                                María López
-                            </td>
+                    </div>
 
-                            <td>
 
-                                <span class="estado no-cumple">
+                    <div class="mb-3">
 
-                                    <span></span>
+                        <button
+                            type="button"
+                            class="btn btn-primary"
+                            data-bs-toggle="modal"
+                            data-bs-target="#modalNuevaInspeccion"
+                        >
+                            + Nueva inspección
+                        </button>
 
-                                    No Cumple
+                    </div>
 
-                                </span>
 
-                            </td>
+                    <div class="card shadow-sm">
 
-                        </tr>
+                        <div class="card-header bg-white p-3">
 
-                        <tr>
+                            <div class="d-flex justify-content-between align-items-center flex-wrap gap-3">
 
-                            <td class="id-inspeccion">
-                                INS-04
-                            </td>
+                                <div>
 
-                            <td>
+                                    <h5 class="mb-1">
+                                        Registro de Inspecciones
+                                    </h5>
 
-                                <strong>
-                                    Herramientas Eléctricas Portátiles
-                                </strong>
+                                    <small class="text-muted">
+                                        6 inspecciones encontradas
+                                    </small>
 
-                                <small>
-                                    SST-Inspecciones
-                                </small>
+                                </div>
 
-                            </td>
 
-                            <td>
-                                Equipos
-                            </td>
+                                <div class="d-flex gap-2">
 
-                            <td>
-                                22 Oct 2023
-                            </td>
+                                    <input
+                                        type="search"
+                                        class="form-control form-control-sm"
+                                        placeholder="Buscar inspección..."
+                                    >
 
-                            <td>
-                                Juan Pérez
-                            </td>
 
-                            <td>
+                                    <select class="form-select form-select-sm">
 
-                                <span class="estado cumple">
+                                        <option selected>
+                                            Todos los estados
+                                        </option>
 
-                                    <span></span>
+                                        <option>
+                                            Cumple
+                                        </option>
 
-                                    Cumple
+                                        <option>
+                                            No cumple
+                                        </option>
 
-                                </span>
+                                        <option>
+                                            Pendiente
+                                        </option>
 
-                            </td>
+                                    </select>
 
-                        </tr>
+                                </div>
 
-                        <tr>
+                            </div>
 
-                            <td class="id-inspeccion">
-                                INS-03
-                            </td>
+                        </div>
 
-                            <td>
 
-                                <strong>
-                                    Inspección de Arnés y Líneas de Vida
-                                </strong>
+                        <div class="table-responsive">
 
-                                <small>
-                                    SST-Inspecciones
-                                </small>
+                            <table class="table table-hover align-middle mb-0">
 
-                            </td>
+                                <thead class="table-light">
 
-                            <td>
-                                Alturas
-                            </td>
+                                    <tr>
 
-                            <td>
-                                20 Oct 2023
-                            </td>
+                                        <th>ID</th>
 
-                            <td>
-                                María López
-                            </td>
+                                        <th>INSPECCIÓN / DETALLE</th>
 
-                            <td>
+                                        <th>TIPO</th>
 
-                                <span class="estado pendiente">
+                                        <th>FECHA</th>
 
-                                    <span></span>
+                                        <th>INSPECTOR</th>
 
-                                    Pendiente
+                                        <th>RESULTADO</th>
 
-                                </span>
+                                        <th>ACCIONES</th>
 
-                            </td>
+                                    </tr>
 
-                        </tr>
+                                </thead>
 
-                        <tr>
 
-                            <td class="id-inspeccion">
-                                INS-02
-                            </td>
+                                <tbody>
 
-                            <td>
+                                    <tr>
 
-                                <strong>
-                                    Botiquines y Estaciones de Emergencia
-                                </strong>
+                                        <td>
+                                            INS-06
+                                        </td>
 
-                                <small>
-                                    SST-Inspecciones
-                                </small>
+                                        <td>
 
-                            </td>
+                                            <strong class="d-block">
+                                                Inspección de Extintores - Bloque A
+                                            </strong>
 
-                            <td>
-                                Botiquines
-                            </td>
+                                            <small class="text-muted">
+                                                SST-Inspecciones
+                                            </small>
 
-                            <td>
-                                18 Oct 2023
-                            </td>
+                                        </td>
 
-                            <td>
-                                Ana Gómez
-                            </td>
+                                        <td>
+                                            Extintores
+                                        </td>
 
-                            <td>
+                                        <td>
+                                            24 Oct 2023
+                                        </td>
 
-                                <span class="estado cumple">
+                                        <td>
+                                            Carlos Rodríguez
+                                        </td>
 
-                                    <span></span>
+                                        <td>
 
-                                    Cumple
+                                            <span class="badge text-bg-success">
+                                                ✓ Cumple
+                                            </span>
 
-                                </span>
+                                        </td>
 
-                            </td>
+                                        <td>
 
-                        </tr>
+                                            <div class="dropdown">
 
-                        <tr>
+                                                <button
+                                                    class="btn btn-sm btn-light"
+                                                    type="button"
+                                                    data-bs-toggle="dropdown"
+                                                >
+                                                    ⋮
+                                                </button>
 
-                            <td class="id-inspeccion">
-                                INS-01
-                            </td>
+                                                <ul class="dropdown-menu">
 
-                            <td>
+                                                    <li>
 
-                                <strong>
-                                    Orden y Limpieza - Almacén Central
-                                </strong>
+                                                        <a class="dropdown-item" href="#">
+                                                            Ver inspección
+                                                        </a>
 
-                                <small>
-                                    SST-Inspecciones
-                                </small>
+                                                    </li>
 
-                            </td>
+                                                    <li>
 
-                            <td>
-                                Orden y Limpieza
-                            </td>
+                                                        <a class="dropdown-item" href="#">
+                                                            Editar inspección
+                                                        </a>
 
-                            <td>
-                                15 Oct 2023
-                            </td>
+                                                    </li>
 
-                            <td>
-                                Carlos Rodríguez
-                            </td>
+                                                </ul>
 
-                            <td>
+                                            </div>
 
-                                <span class="estado en-proceso">
+                                        </td>
 
-                                    <span></span>
+                                    </tr>
 
-                                    En Proceso
 
-                                </span>
+                                    <tr>
 
-                            </td>
+                                        <td>
+                                            INS-05
+                                        </td>
 
-                        </tr>
+                                        <td>
 
+                                            <strong class="d-block">
+                                                Uso de EPP - Personal de Planta
+                                            </strong>
 
-                    </tbody>
+                                            <small class="text-muted">
+                                                SST-Inspecciones
+                                            </small>
 
-                </table>
-            </div>
+                                        </td>
 
-            <div class="pie-tabla">
+                                        <td>
+                                            EPP
+                                        </td>
 
+                                        <td>
+                                            23 Oct 2023
+                                        </td>
 
-                <span id="contadorRegistros">
-                    Mostrando 1 a 6 de 6 registros
-                </span>
+                                        <td>
+                                            María López
+                                        </td>
 
+                                        <td>
 
-                <div class="paginacion">
+                                            <span class="badge text-bg-danger">
+                                                ✕ No cumple
+                                            </span>
 
+                                        </td>
 
-                    <button
-                        type="button"
-                        disabled>
+                                        <td>
 
-                        <i class="bi bi-chevron-left"></i>
+                                            <div class="dropdown">
 
-                    </button>
+                                                <button
+                                                    class="btn btn-sm btn-light"
+                                                    type="button"
+                                                    data-bs-toggle="dropdown"
+                                                >
+                                                    ⋮
+                                                </button>
 
+                                                <ul class="dropdown-menu">
 
-                    <button
-                        type="button"
-                        class="pagina-actual">
+                                                    <li>
 
-                        1
+                                                        <a class="dropdown-item" href="#">
+                                                            Ver inspección
+                                                        </a>
 
-                    </button>
+                                                    </li>
 
+                                                    <li>
 
-                    <button
-                        type="button"
-                        disabled>
+                                                        <a class="dropdown-item" href="#">
+                                                            Editar inspección
+                                                        </a>
 
-                        <i class="bi bi-chevron-right"></i>
+                                                    </li>
 
-                    </button>
+                                                </ul>
 
+                                            </div>
 
-                </div>
+                                        </td>
 
+                                    </tr>
 
-            </div>
 
+                                    <tr>
 
-        </section>
+                                        <td>
+                                            INS-04
+                                        </td>
 
+                                        <td>
 
-    </main>
+                                            <strong class="d-block">
+                                                Herramientas Eléctricas Portátiles
+                                            </strong>
 
-    <div
-        class="modal fade"
-        id="modalNuevaInspeccion"
-        tabindex="-1"
-        aria-hidden="true">
+                                            <small class="text-muted">
+                                                SST-Inspecciones
+                                            </small>
 
+                                        </td>
 
-        <div class="modal-dialog modal-dialog-centered">
+                                        <td>
+                                            Equipos
+                                        </td>
 
+                                        <td>
+                                            22 Oct 2023
+                                        </td>
+
+                                        <td>
+                                            Juan Pérez
+                                        </td>
+
+                                        <td>
+
+                                            <span class="badge text-bg-success">
+                                                ✓ Cumple
+                                            </span>
+
+                                        </td>
+
+                                        <td>
+
+                                            <div class="dropdown">
+
+                                                <button
+                                                    class="btn btn-sm btn-light"
+                                                    type="button"
+                                                    data-bs-toggle="dropdown"
+                                                >
+                                                    ⋮
+                                                </button>
+
+                                                <ul class="dropdown-menu">
+
+                                                    <li>
+
+                                                        <a class="dropdown-item" href="#">
+                                                            Ver inspección
+                                                        </a>
+
+                                                    </li>
+
+                                                    <li>
+
+                                                        <a class="dropdown-item" href="#">
+                                                            Editar inspección
+                                                        </a>
+
+                                                    </li>
+
+                                                </ul>
+
+                                            </div>
+
+                                        </td>
+
+                                    </tr>
+
+
+                                    <tr>
+
+                                        <td>
+                                            INS-03
+                                        </td>
+
+                                        <td>
+
+                                            <strong class="d-block">
+                                                Inspección de Arnés y Líneas de Vida
+                                            </strong>
+
+                                            <small class="text-muted">
+                                                SST-Inspecciones
+                                            </small>
+
+                                        </td>
+
+                                        <td>
+                                            Alturas
+                                        </td>
+
+                                        <td>
+                                            20 Oct 2023
+                                        </td>
+
+                                        <td>
+                                            María López
+                                        </td>
+
+                                        <td>
+
+                                            <span class="badge text-bg-warning">
+                                                ● Pendiente
+                                            </span>
+
+                                        </td>
+
+                                        <td>
+
+                                            <div class="dropdown">
+
+                                                <button
+                                                    class="btn btn-sm btn-light"
+                                                    type="button"
+                                                    data-bs-toggle="dropdown"
+                                                >
+                                                    ⋮
+                                                </button>
+
+                                                <ul class="dropdown-menu">
+
+                                                    <li>
+
+                                                        <a class="dropdown-item" href="#">
+                                                            Ver inspección
+                                                        </a>
+
+                                                    </li>
+
+                                                    <li>
+
+                                                        <a class="dropdown-item" href="#">
+                                                            Editar inspección
+                                                        </a>
+
+                                                    </li>
+
+                                                </ul>
+
+                                            </div>
+
+                                        </td>
+
+                                    </tr>
+
+
+                                    <tr>
+
+                                        <td>
+                                            INS-02
+                                        </td>
+
+                                        <td>
+
+                                            <strong class="d-block">
+                                                Inspección de Señalización
+                                            </strong>
+
+                                            <small class="text-muted">
+                                                SST-Inspecciones
+                                            </small>
+
+                                        </td>
+
+                                        <td>
+                                            Señalización
+                                        </td>
+
+                                        <td>
+                                            18 Oct 2023
+                                        </td>
+
+                                        <td>
+                                            Carlos Rodríguez
+                                        </td>
+
+                                        <td>
+
+                                            <span class="badge text-bg-success">
+                                                ✓ Cumple
+                                            </span>
+
+                                        </td>
+
+                                        <td>
+
+                                            <div class="dropdown">
+
+                                                <button
+                                                    class="btn btn-sm btn-light"
+                                                    type="button"
+                                                    data-bs-toggle="dropdown"
+                                                >
+                                                    ⋮
+                                                </button>
+
+                                                <ul class="dropdown-menu">
+
+                                                    <li>
+
+                                                        <a class="dropdown-item" href="#">
+                                                            Ver inspección
+                                                        </a>
+
+                                                    </li>
+
+                                                    <li>
+
+                                                        <a class="dropdown-item" href="#">
+                                                            Editar inspección
+                                                        </a>
+
+                                                    </li>
+
+                                                </ul>
+
+                                            </div>
+
+                                        </td>
+
+                                    </tr>
+
+
+                                    <tr>
+
+                                        <td>
+                                            INS-01
+                                        </td>
+
+                                        <td>
+
+                                            <strong class="d-block">
+                                                Inspección General de Seguridad
+                                            </strong>
+
+                                            <small class="text-muted">
+                                                SST-Inspecciones
+                                            </small>
+
+                                        </td>
+
+                                        <td>
+                                            General
+                                        </td>
+
+                                        <td>
+                                            16 Oct 2023
+                                        </td>
+
+                                        <td>
+                                            Ana Gómez
+                                        </td>
+
+                                        <td>
+
+                                            <span class="badge text-bg-success">
+                                                ✓ Cumple
+                                            </span>
+
+                                        </td>
+
+                                        <td>
+
+                                            <div class="dropdown">
+
+                                                <button
+                                                    class="btn btn-sm btn-light"
+                                                    type="button"
+                                                    data-bs-toggle="dropdown"
+                                                >
+                                                    ⋮
+                                                </button>
+
+                                                <ul class="dropdown-menu">
+
+                                                    <li>
+
+                                                        <a class="dropdown-item" href="#">
+                                                            Ver inspección
+                                                        </a>
+
+                                                    </li>
+
+                                                    <li>
+
+                                                        <a class="dropdown-item" href="#">
+                                                            Editar inspección
+                                                        </a>
+
+                                                    </li>
+
+                                                </ul>
+
+                                            </div>
+
+                                        </td>
+
+                                    </tr>
+
+                                </tbody>
+
+                            </table>
+
+                        </div>
+
+
+                        <div class="card-footer bg-white d-flex justify-content-between align-items-center">
+
+                            <small class="text-muted">
+                                Mostrando 1 a 6 de 6 inspecciones
+                            </small>
+
+                            <nav>
+
+                                <ul class="pagination pagination-sm mb-0">
+
+                                    <li class="page-item active">
+
+                                        <a class="page-link" href="#">
+                                            1
+                                        </a>
+
+                                    </li>
+
+                                </ul>
+
+                            </nav>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+            </main>
+
+        </div>
+
+    </div>
+
+
+    <div class="modal fade" id="modalNuevaInspeccion" tabindex="-1">
+
+        <div class="modal-dialog modal-lg modal-dialog-centered">
 
             <div class="modal-content">
 
-
                 <div class="modal-header">
 
-                    <h5 class="modal-title">
-                        Nueva inspección
-                    </h5>
+                    <div>
+
+                        <h5 class="modal-title">
+                            Nueva inspección de seguridad
+                        </h5>
+
+                        <small class="text-muted">
+                            Registre la información de la inspección.
+                        </small>
+
+                    </div>
 
                     <button
                         type="button"
                         class="btn-close"
                         data-bs-dismiss="modal"
-                        aria-label="Cerrar">
-                    </button>
+                    ></button>
 
                 </div>
-
 
 
                 <div class="modal-body">
 
-                    <div class="mb-3">
+                    <form>
 
-                        <label
-                            for="nombreInspeccion"
-                            class="form-label">
+                        <div class="row g-3">
 
-                            Inspección / detalle
+                            <div class="col-md-8">
 
-                        </label>
+                                <label class="form-label">
+                                    Inspección / detalle
+                                </label>
 
-                        <input
-                            type="text"
-                            id="nombreInspeccion"
-                            class="form-control"
-                            placeholder="Ej. Inspección de extintores">
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="Ej. Inspección de extintores - Bloque A"
+                                >
 
-                    </div>
+                            </div>
 
-                    <div class="mb-3">
 
-                        <label
-                            for="tipoInspeccion"
-                            class="form-label">
+                            <div class="col-md-4">
 
-                            Tipo
+                                <label class="form-label">
+                                    Tipo
+                                </label>
 
-                        </label>
+                                <select class="form-select">
 
-                        <select
-                            id="tipoInspeccion"
-                            class="form-select">
+                                    <option selected>
+                                        Seleccione
+                                    </option>
 
-                            <option value="">
-                                Seleccionar tipo
-                            </option>
+                                    <option>
+                                        Extintores
+                                    </option>
 
-                            <option value="Extintores">
-                                Extintores
-                            </option>
+                                    <option>
+                                        EPP
+                                    </option>
 
-                            <option value="EPP">
-                                EPP
-                            </option>
+                                    <option>
+                                        Equipos
+                                    </option>
 
-                            <option value="Equipos">
-                                Equipos
-                            </option>
+                                    <option>
+                                        Alturas
+                                    </option>
 
-                            <option value="Alturas">
-                                Alturas
-                            </option>
+                                    <option>
+                                        Señalización
+                                    </option>
 
-                            <option value="Botiquines">
-                                Botiquines
-                            </option>
+                                    <option>
+                                        General
+                                    </option>
 
-                            <option value="Orden y Limpieza">
-                                Orden y Limpieza
-                            </option>
+                                </select>
 
-                        </select>
+                            </div>
 
-                    </div>
 
-                    <div class="mb-3">
+                            <div class="col-md-6">
 
-                        <label
-                            for="fechaInspeccion"
-                            class="form-label">
+                                <label class="form-label">
+                                    Fecha
+                                </label>
 
-                            Fecha
+                                <input
+                                    type="date"
+                                    class="form-control"
+                                >
 
-                        </label>
+                            </div>
 
-                        <input
-                            type="date"
-                            id="fechaInspeccion"
-                            class="form-control">
 
-                    </div>
+                            <div class="col-md-6">
 
-                    <div class="mb-3">
+                                <label class="form-label">
+                                    Inspector
+                                </label>
 
-                        <label
-                            for="inspectorInspeccion"
-                            class="form-label">
+                                <select class="form-select">
 
-                            Inspector
+                                    <option selected>
+                                        Seleccione un inspector
+                                    </option>
 
-                        </label>
+                                    <option>
+                                        Carlos Rodríguez
+                                    </option>
 
-                        <select
-                            id="inspectorInspeccion"
-                            class="form-select">
+                                    <option>
+                                        María López
+                                    </option>
 
-                            <option value="">
-                                Seleccionar inspector
-                            </option>
+                                    <option>
+                                        Juan Pérez
+                                    </option>
 
-                            <option value="Carlos Rodríguez">
-                                Carlos Rodríguez
-                            </option>
+                                    <option>
+                                        Ana Gómez
+                                    </option>
 
-                            <option value="María López">
-                                María López
-                            </option>
+                                </select>
 
-                            <option value="Juan Pérez">
-                                Juan Pérez
-                            </option>
+                            </div>
 
-                            <option value="Ana Gómez">
-                                Ana Gómez
-                            </option>
 
-                        </select>
+                            <div class="col-12">
 
-                    </div>
+                                <label class="form-label">
+                                    Resultado
+                                </label>
 
-                    <div class="mb-3">
+                                <select class="form-select">
 
-                        <label
-                            for="resultadoInspeccion"
-                            class="form-label">
+                                    <option selected>
+                                        Seleccione el resultado
+                                    </option>
 
-                            Resultado
+                                    <option>
+                                        Cumple
+                                    </option>
 
-                        </label>
+                                    <option>
+                                        No cumple
+                                    </option>
 
-                        <select
-                            id="resultadoInspeccion"
-                            class="form-select">
+                                    <option>
+                                        Pendiente
+                                    </option>
 
-                            <option value="">
-                                Seleccionar resultado
-                            </option>
+                                </select>
 
-                            <option value="cumple">
-                                Cumple
-                            </option>
+                            </div>
 
-                            <option value="no-cumple">
-                                No Cumple
-                            </option>
 
-                            <option value="pendiente">
-                                Pendiente
-                            </option>
+                            <div class="col-12">
 
-                            <option value="en-proceso">
-                                En Proceso
-                            </option>
+                                <label class="form-label">
+                                    Observaciones
+                                </label>
 
-                        </select>
+                                <textarea
+                                    class="form-control"
+                                    rows="4"
+                                    placeholder="Escriba las observaciones encontradas durante la inspección..."
+                                ></textarea>
 
-                    </div>
+                            </div>
 
+                        </div>
+
+                    </form>
 
                 </div>
-
 
 
                 <div class="modal-footer">
 
-
                     <button
                         type="button"
                         class="btn btn-secondary"
-                        data-bs-dismiss="modal">
-
-                        Cancelar
-
-                    </button>
-
-
-                    <button
-                        type="button"
-                        id="guardarInspeccion"
-                        class="btn btn-primary">
-
-                        Guardar inspección
-
-                    </button>
-
-
-                </div>
-
-
-            </div>
-
-        </div>
-
-    </div>
-
-    <div
-        class="modal fade"
-        id="modalCerrarSesion"
-        tabindex="-1"
-        aria-labelledby="tituloCerrarSesion"
-        aria-hidden="true">
-
-
-        <div class="modal-dialog modal-dialog-centered">
-
-
-            <div class="modal-content modal-confirmacion">
-
-
-                <!-- ENCABEZADO -->
-
-                <div class="modal-header">
-
-                    <div class="icono-cerrar-sesion">
-
-                        <i class="bi bi-box-arrow-right"></i>
-
-                    </div>
-
-
-                    <button
-                        type="button"
-                        class="btn-close"
                         data-bs-dismiss="modal"
-                        aria-label="Cerrar">
+                    >
+                        Cancelar
                     </button>
-
-                </div>
-
-                <div class="modal-body text-center">
-
-                    <h5 id="tituloCerrarSesion">
-
-                        ¿Cerrar sesión?
-
-                    </h5>
-
-                    <p>
-
-                        ¿Estás seguro de que deseas cerrar tu sesión?
-
-                    </p>
-
-                </div>
-
-
-                <div class="modal-footer justify-content-center">
 
                     <button
                         type="button"
-                        class="btn btn-secondary boton-cancelar"
-                        data-bs-dismiss="modal">
-
-                        No, permanecer
-
+                        class="btn btn-primary"
+                    >
+                        Guardar inspección
                     </button>
 
-                    <a
-                        href="index.html"
-                        class="btn boton-confirmar">
-
-                        Sí, cerrar sesión
-
-                    </a>
-
-
                 </div>
-
 
             </div>
 
@@ -1159,388 +1076,8 @@
 
     </div>
 
-    <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
-    </script>
 
-
-    <script>
-
-
-        const buscador =
-            document.getElementById("buscarInspeccion");
-
-        const filtroEstado =
-            document.getElementById("filtroEstado");
-
-        const cuerpoTabla =
-            document.getElementById("cuerpoTabla");
-
-        const textoRegistros =
-            document.getElementById("textoRegistros");
-
-        const contadorRegistros =
-            document.getElementById("contadorRegistros");
-
-        const totalMes =
-            document.getElementById("totalMes");
-
-
-        function filtrarInspecciones() {
-
-
-            const texto =
-                buscador.value
-                    .toLowerCase()
-                    .trim();
-
-
-            const estado =
-                filtroEstado.value;
-
-
-            const filas =
-                cuerpoTabla.querySelectorAll("tr");
-
-
-            let visibles = 0;
-
-
-            filas.forEach(function (fila) {
-
-
-                const contenido =
-                    fila.textContent.toLowerCase();
-
-
-                const elementoEstado =
-                    fila.querySelector(".estado");
-
-
-                let coincideTexto =
-                    contenido.includes(texto);
-
-
-                let coincideEstado = true;
-
-
-                if (estado !== "todos") {
-
-                    coincideEstado =
-                        elementoEstado.classList.contains(estado);
-
-                }
-
-
-                if (
-                    coincideTexto &&
-                    coincideEstado
-                ) {
-
-                    fila.style.display = "";
-
-                    visibles++;
-
-                } else {
-
-                    fila.style.display = "none";
-
-                }
-
-            });
-
-
-            textoRegistros.textContent =
-                visibles +
-                " inspecciones encontradas";
-
-
-            contadorRegistros.textContent =
-                "Mostrando " +
-                visibles +
-                " de " +
-                filas.length +
-                " registros";
-
-        }
-
-
-        buscador.addEventListener(
-            "input",
-            filtrarInspecciones
-        );
-
-
-        filtroEstado.addEventListener(
-            "change",
-            filtrarInspecciones
-        );
-
-
-        const botonGuardar =
-            document.getElementById(
-                "guardarInspeccion"
-            );
-
-
-        botonGuardar.addEventListener(
-            "click",
-            guardarInspeccion
-        );
-
-
-        function guardarInspeccion() {
-
-
-            const nombre =
-                document
-                    .getElementById("nombreInspeccion")
-                    .value
-                    .trim();
-
-
-            const tipo =
-                document
-                    .getElementById("tipoInspeccion")
-                    .value;
-
-
-            const fecha =
-                document
-                    .getElementById("fechaInspeccion")
-                    .value;
-
-
-            const inspector =
-                document
-                    .getElementById("inspectorInspeccion")
-                    .value;
-
-
-            const resultado =
-                document
-                    .getElementById("resultadoInspeccion")
-                    .value;
-
-
-
-            /* VALIDACIÓN */
-
-            if (
-                nombre === "" ||
-                tipo === "" ||
-                fecha === "" ||
-                inspector === "" ||
-                resultado === ""
-            ) {
-
-                alert(
-                    "Por favor completa todos los campos."
-                );
-
-                return;
-
-            }
-
-
-            const cantidad =
-                cuerpoTabla.querySelectorAll("tr").length + 1;
-
-
-            const id =
-                "INS-" +
-                String(cantidad).padStart(2, "0");
-
-
-            const fechaObjeto =
-                new Date(fecha + "T00:00:00");
-
-
-            const fechaFormateada =
-                fechaObjeto.toLocaleDateString(
-                    "es-ES",
-                    {
-                        day: "2-digit",
-                        month: "short",
-                        year: "numeric"
-                    }
-                );
-            let textoResultado;
-
-
-            if (resultado === "cumple") {
-
-                textoResultado = "Cumple";
-
-            }
-
-            else if (resultado === "no-cumple") {
-
-                textoResultado = "No Cumple";
-
-            }
-
-            else if (resultado === "pendiente") {
-
-                textoResultado = "Pendiente";
-
-            }
-
-            else {
-
-                textoResultado = "En Proceso";
-
-            }
-
-            const fila =
-                document.createElement("tr");
-
-
-            fila.innerHTML = `
-
-                <td class="id-inspeccion">
-                    ${id}
-                </td>
-
-                <td>
-
-                    <strong>
-                        ${nombre}
-                    </strong>
-
-                    <small>
-                        SST-Inspecciones
-                    </small>
-
-                </td>
-
-                <td>
-                    ${tipo}
-                </td>
-
-                <td>
-                    ${fechaFormateada}
-                </td>
-
-                <td>
-                    ${inspector}
-                </td>
-
-                <td>
-
-                    <span class="estado ${resultado}">
-
-                        <span></span>
-
-                        ${textoResultado}
-
-                    </span>
-
-                </td>
-
-            `;
-
-
-            cuerpoTabla.appendChild(fila);
-
-            const total =
-                cuerpoTabla.querySelectorAll("tr").length;
-
-
-            totalMes.textContent =
-                total;
-
-
-            textoRegistros.textContent =
-                total +
-                " inspecciones encontradas";
-
-
-            contadorRegistros.textContent =
-                "Mostrando 1 a " +
-                total +
-                " de " +
-                total +
-                " registros";
-
-            document.getElementById(
-                "nombreInspeccion"
-            ).value = "";
-
-
-            document.getElementById(
-                "tipoInspeccion"
-            ).value = "";
-
-
-            document.getElementById(
-                "fechaInspeccion"
-            ).value = "";
-
-
-            document.getElementById(
-                "inspectorInspeccion"
-            ).value = "";
-
-
-            document.getElementById(
-                "resultadoInspeccion"
-            ).value = "";
-
-            const modal =
-                bootstrap.Modal.getInstance(
-                    document.getElementById(
-                        "modalNuevaInspeccion"
-                    )
-                );
-
-
-            modal.hide();
-
-        }
-
-        const elementosMenu =
-            document.querySelectorAll(
-                ".elemento-menu"
-            );
-
-
-        elementosMenu.forEach(
-            function (elemento) {
-
-
-                elemento.addEventListener(
-                    "click",
-                    function (evento) {
-
-
-                        evento.preventDefault();
-
-
-                        elementosMenu.forEach(
-                            function (item) {
-
-                                item.classList.remove(
-                                    "activo"
-                                );
-
-                            }
-                        );
-
-
-                        elemento.classList.add(
-                            "activo"
-                        );
-
-                    }
-                );
-
-            }
-        );
-
-
-    </script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
