@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SegurApp - Inspecciones</title>
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+    <link
+        rel="stylesheet"
+        href="CSS/inspecciones.css">
+
+</head>
+
+
+<body>
+
+    <aside class="barra-lateral">
+
+        <div class="contenedor-logo">
+
+            <img
+                src="logoSegurApp.png"
+                alt="Logo SegurApp"
+                class="logo">
+
+        </div>
+
+        <nav class="menu-lateral">
+
+
+            <a href="#" class="elemento-menu">
+
+                <i class="bi bi-grid-1x2"></i>
+
+                <span>
+                    Dashboard
+                </span>
+
+            </a>
+
+
+            <a href="#" class="elemento-menu">
+
+                <i class="bi bi-people"></i>
+
+                <span>
+                    Empleados
+                </span>
+
+            </a>
+
+
+            <a href="#" class="elemento-menu">
+
+                <i class="bi bi-book"></i>
+
+                <span>
+                    Capacitaciones
+                </span>
+
+            </a>
+
+
+            <a href="#" class="elemento-menu activo">
+
+                <i class="bi bi-clipboard-check"></i>
+
+                <span>
+                    Inspecciones
+                </span>
+
+            </a>
+
+
+            <a href="#" class="elemento-menu">
+
+                <i class="bi bi-exclamation-triangle"></i>
+
+                <span>
+                    Incidentes y Accidentes
+                </span>
+
+            </a>
+
+
+            <a href="#" class="elemento-menu">
+
+                <i class="bi bi-briefcase"></i>
+
+                <span>
+                    EPP
+                </span>
+
+            </a>
+
+
+            <a href="#" class="elemento-menu">
+
+                <i class="bi bi-shield-exclamation"></i>
+
+                <span>
+                    Riesgos
+                </span>
+
+            </a>
+
+
+            <a href="#" class="elemento-menu">
+
+                <i class="bi bi-folder"></i>
+
+                <span>
+                    Documentos
+                </span>
+
+            </a>
+
+
+            <a href="#" class="elemento-menu">
+
+                <i class="bi bi-bell"></i>
+
+                <span>
+                    Alertas
+                </span>
+
+            </a>
+
+
+            <a href="#" class="elemento-menu">
+
+                <i class="bi bi-bar-chart"></i>
+
+                <span>
+                    Reportes
+                </span>
+
+            </a>
+
+
+            <a href="#" class="elemento-menu">
+
+                <i class="bi bi-gear"></i>
+
+                <span>
+                    Configuración
+                </span>
+
+            </a>
+
+
+        </nav>
+
+    </aside>
+
+    <main class="contenido-principal">
+
+        <header class="barra-superior">
+
+            <div class="buscador-superior">
+
+                <i class="bi bi-search"></i>
+
+                <input
+                    type="text"
+                    placeholder="Buscar...">
+
+            </div>
+
+            <div class="parte-derecha">
+
+                <div class="dropdown">
+
+
+                    <button
+                        class="boton-notificaciones"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                        title="Notificaciones">
+
+                        <i class="bi bi-bell"></i>
+
+                        <span class="numero-notificacion">
+                            1
+                        </span>
+
+                    </button>
+
+                    <div class="dropdown-menu dropdown-menu-end panel-notificaciones">
+
+                        <div class="encabezado-notificaciones">
+
+                            <div>
+
+                                <strong>
+                                    Notificaciones
+                                </strong>
+
+                                <small>
+                                    Tienes 1 notificación
+                                </small>
+
+                            </div>
+
+
+                            <span class="cantidad-notificaciones">
+                                1
+                            </span>
+
+                        </div>
+
+                        <div class="notificacion">
+
+
+                            <div class="icono-notificacion">
+
+                                <i class="bi bi-exclamation-triangle"></i>
+
+                            </div>
+
+
+                            <div class="texto-notificacion">
+
+                                <strong>
+                                    Inspección pendiente
+                                </strong>
+
+                                <p>
+                                    La inspección de Arnés y Líneas de Vida está pendiente.
+                                </p>
+
+                                <small>
+                                    Hace 2 horas
+                                </small>
+
+                            </div>
+
+
+                        </div>
+
+                        <div class="pie-notificaciones">
+
+                            <a href="#">
+                                Ver todas las notificaciones
+                            </a>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <div class="dropdown">
+
+
+                    <button
+                        class="usuario"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false">
+
+                        <div class="avatar">
+                            SG
+                        </div>
+
+                        <div class="informacion-usuario">
+
+                            <strong>
+                                SegurApp
+                            </strong>
+
+                            <small>
+                                Administrador
+                            </small>
+
+                        </div>
+
+
+                        <i class="bi bi-chevron-down flecha"></i>
+
+
+                    </button>
+
+                    <ul class="dropdown-menu dropdown-menu-end menu-usuario">
+
+
+                        <li>
+
+                            <a
+                                href="#"
+                                class="dropdown-item">
+
+                                <i class="bi bi-person"></i>
+
+                                Mi perfil
+
+                            </a>
+
+                        </li>
+
+
+                        <li>
+
+                            <a
+                                href="#"
+                                class="dropdown-item">
+
+                                <i class="bi bi-gear"></i>
+
+                                Configuración
+
+                            </a>
+
+                        </li>
+
+
+                        <li>
+
+                            <hr class="dropdown-divider">
+
+                        </li>
+
+                        <li>
+
+                            <a
+                                href="#"
+                                class="dropdown-item cerrar-sesion"
+                                data-bs-toggle="modal"
+                                data-bs-target="#modalCerrarSesion">
+
+                                <i class="bi bi-box-arrow-right"></i>
+
+                                Cerrar sesión
+
+                            </a>
+
+                        </li>
+
+
+                    </ul>
+
+                </div>
+
+
+            </div>
+
+        </header>
+
+        <section class="encabezado-pagina">
+
+
+            <div>
+
+                <h1>
+                    Inspecciones de Seguridad
+                </h1>
+
+                <p>
+                    Monitoreo, control y auditoría de condiciones de trabajo seguras.
+                </p>
+
+            </div>
+
+
+
+            <!-- INDICADORES -->
+
+            <div class="indicadores">
+
+
+                <div class="indicador">
+
+                    <span>
+                        CUMPLIMIENTO
+                    </span>
+
+                    <strong class="texto-verde">
+                        82.5%
+                    </strong>
+
+                </div>
+
+
+                <div class="indicador">
+
+                    <span>
+                        TOTAL MES
+                    </span>
+
+                    <strong id="totalMes">
+                        6
+                    </strong>
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+        <section class="tarjeta-inspecciones">
+
+            <div class="cabecera-tarjeta">
+
+
+                <div class="informacion-registro">
+
+                    <h2>
+                        Registro de Inspecciones
+                    </h2>
+
+                    <p id="textoRegistros">
+                        6 inspecciones encontradas
+                    </p>
+
+                </div>
+
+                <div class="controles">
+
+                    <div class="buscador-inspecciones">
+
+                        <i class="bi bi-search"></i>
+
+                        <input
+                            type="text"
+                            id="buscarInspeccion"
+                            placeholder="Buscar inspección...">
+
+                    </div>
+
+                    <select
+                        id="filtroEstado"
+                        class="filtro-estado">
+
+                        <option value="todos">
+                            Todos los estados
+                        </option>
+
+                        <option value="cumple">
+                            Cumple
+                        </option>
+
+                        <option value="no-cumple">
+                            No Cumple
+                        </option>
+
+                        <option value="pendiente">
+                            Pendiente
+                        </option>
+
+                        <option value="en-proceso">
+                            En Proceso
+                        </option>
+
+                    </select>
+
+                    <button
+                        type="button"
+                        class="boton-nueva"
+                        data-bs-toggle="modal"
+                        data-bs-target="#modalNuevaInspeccion">
+
+                        <i class="bi bi-plus"></i>
+
+                        Nueva inspección
+
+                    </button>
+
+
+                </div>
+
+
+            </div>
+
+
+            <div class="tabla-contenedor">
+
+
+                <table class="table tabla-inspecciones">
+
+
+                    <thead>
+
+                        <tr>
+
+                            <th>
+                                ID
+                            </th>
+
+                            <th>
+                                INSPECCIÓN / DETALLE
+                            </th>
+
+                            <th>
+                                TIPO
+                            </th>
+
+                            <th>
+                                FECHA
+                            </th>
+
+                            <th>
+                                INSPECTOR
+                            </th>
+
+                            <th>
+                                RESULTADO
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+
+
+                    <tbody id="cuerpoTabla">
+
+                        <tr>
+
+                            <td class="id-inspeccion">
+                                INS-06
+                            </td>
+
+                            <td>
+
+                                <strong>
+                                    Inspección de Extintores - Bloque A
+                                </strong>
+
+                                <small>
+                                    SST-Inspecciones
+                                </small>
+
+                            </td>
+
+                            <td>
+                                Extintores
+                            </td>
+
+                            <td>
+                                24 Oct 2023
+                            </td>
+
+                            <td>
+                                Carlos Rodríguez
+                            </td>
+
+                            <td>
+
+                                <span class="estado cumple">
+
+                                    <span></span>
+
+                                    Cumple
+
+                                </span>
+
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td class="id-inspeccion">
+                                INS-05
+                            </td>
+
+                            <td>
+
+                                <strong>
+                                    Uso de EPP - Personal de Planta
+                                </strong>
+
+                                <small>
+                                    SST-Inspecciones
+                                </small>
+
+                            </td>
+
+                            <td>
+                                EPP
+                            </td>
+
+                            <td>
+                                23 Oct 2023
+                            </td>
+
+                            <td>
+                                María López
+                            </td>
+
+                            <td>
+
+                                <span class="estado no-cumple">
+
+                                    <span></span>
+
+                                    No Cumple
+
+                                </span>
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td class="id-inspeccion">
+                                INS-04
+                            </td>
+
+                            <td>
+
+                                <strong>
+                                    Herramientas Eléctricas Portátiles
+                                </strong>
+
+                                <small>
+                                    SST-Inspecciones
+                                </small>
+
+                            </td>
+
+                            <td>
+                                Equipos
+                            </td>
+
+                            <td>
+                                22 Oct 2023
+                            </td>
+
+                            <td>
+                                Juan Pérez
+                            </td>
+
+                            <td>
+
+                                <span class="estado cumple">
+
+                                    <span></span>
+
+                                    Cumple
+
+                                </span>
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td class="id-inspeccion">
+                                INS-03
+                            </td>
+
+                            <td>
+
+                                <strong>
+                                    Inspección de Arnés y Líneas de Vida
+                                </strong>
+
+                                <small>
+                                    SST-Inspecciones
+                                </small>
+
+                            </td>
+
+                            <td>
+                                Alturas
+                            </td>
+
+                            <td>
+                                20 Oct 2023
+                            </td>
+
+                            <td>
+                                María López
+                            </td>
+
+                            <td>
+
+                                <span class="estado pendiente">
+
+                                    <span></span>
+
+                                    Pendiente
+
+                                </span>
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td class="id-inspeccion">
+                                INS-02
+                            </td>
+
+                            <td>
+
+                                <strong>
+                                    Botiquines y Estaciones de Emergencia
+                                </strong>
+
+                                <small>
+                                    SST-Inspecciones
+                                </small>
+
+                            </td>
+
+                            <td>
+                                Botiquines
+                            </td>
+
+                            <td>
+                                18 Oct 2023
+                            </td>
+
+                            <td>
+                                Ana Gómez
+                            </td>
+
+                            <td>
+
+                                <span class="estado cumple">
+
+                                    <span></span>
+
+                                    Cumple
+
+                                </span>
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td class="id-inspeccion">
+                                INS-01
+                            </td>
+
+                            <td>
+
+                                <strong>
+                                    Orden y Limpieza - Almacén Central
+                                </strong>
+
+                                <small>
+                                    SST-Inspecciones
+                                </small>
+
+                            </td>
+
+                            <td>
+                                Orden y Limpieza
+                            </td>
+
+                            <td>
+                                15 Oct 2023
+                            </td>
+
+                            <td>
+                                Carlos Rodríguez
+                            </td>
+
+                            <td>
+
+                                <span class="estado en-proceso">
+
+                                    <span></span>
+
+                                    En Proceso
+
+                                </span>
+
+                            </td>
+
+                        </tr>
+
+
+                    </tbody>
+
+                </table>
+            </div>
