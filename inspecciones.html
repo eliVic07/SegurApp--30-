@@ -803,3 +803,745 @@
 
                 </table>
             </div>
+
+            <div class="pie-tabla">
+
+
+                <span id="contadorRegistros">
+                    Mostrando 1 a 6 de 6 registros
+                </span>
+
+
+                <div class="paginacion">
+
+
+                    <button
+                        type="button"
+                        disabled>
+
+                        <i class="bi bi-chevron-left"></i>
+
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="pagina-actual">
+
+                        1
+
+                    </button>
+
+
+                    <button
+                        type="button"
+                        disabled>
+
+                        <i class="bi bi-chevron-right"></i>
+
+                    </button>
+
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+    <div
+        class="modal fade"
+        id="modalNuevaInspeccion"
+        tabindex="-1"
+        aria-hidden="true">
+
+
+        <div class="modal-dialog modal-dialog-centered">
+
+
+            <div class="modal-content">
+
+
+                <div class="modal-header">
+
+                    <h5 class="modal-title">
+                        Nueva inspección
+                    </h5>
+
+                    <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Cerrar">
+                    </button>
+
+                </div>
+
+
+
+                <div class="modal-body">
+
+                    <div class="mb-3">
+
+                        <label
+                            for="nombreInspeccion"
+                            class="form-label">
+
+                            Inspección / detalle
+
+                        </label>
+
+                        <input
+                            type="text"
+                            id="nombreInspeccion"
+                            class="form-control"
+                            placeholder="Ej. Inspección de extintores">
+
+                    </div>
+
+                    <div class="mb-3">
+
+                        <label
+                            for="tipoInspeccion"
+                            class="form-label">
+
+                            Tipo
+
+                        </label>
+
+                        <select
+                            id="tipoInspeccion"
+                            class="form-select">
+
+                            <option value="">
+                                Seleccionar tipo
+                            </option>
+
+                            <option value="Extintores">
+                                Extintores
+                            </option>
+
+                            <option value="EPP">
+                                EPP
+                            </option>
+
+                            <option value="Equipos">
+                                Equipos
+                            </option>
+
+                            <option value="Alturas">
+                                Alturas
+                            </option>
+
+                            <option value="Botiquines">
+                                Botiquines
+                            </option>
+
+                            <option value="Orden y Limpieza">
+                                Orden y Limpieza
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="mb-3">
+
+                        <label
+                            for="fechaInspeccion"
+                            class="form-label">
+
+                            Fecha
+
+                        </label>
+
+                        <input
+                            type="date"
+                            id="fechaInspeccion"
+                            class="form-control">
+
+                    </div>
+
+                    <div class="mb-3">
+
+                        <label
+                            for="inspectorInspeccion"
+                            class="form-label">
+
+                            Inspector
+
+                        </label>
+
+                        <select
+                            id="inspectorInspeccion"
+                            class="form-select">
+
+                            <option value="">
+                                Seleccionar inspector
+                            </option>
+
+                            <option value="Carlos Rodríguez">
+                                Carlos Rodríguez
+                            </option>
+
+                            <option value="María López">
+                                María López
+                            </option>
+
+                            <option value="Juan Pérez">
+                                Juan Pérez
+                            </option>
+
+                            <option value="Ana Gómez">
+                                Ana Gómez
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="mb-3">
+
+                        <label
+                            for="resultadoInspeccion"
+                            class="form-label">
+
+                            Resultado
+
+                        </label>
+
+                        <select
+                            id="resultadoInspeccion"
+                            class="form-select">
+
+                            <option value="">
+                                Seleccionar resultado
+                            </option>
+
+                            <option value="cumple">
+                                Cumple
+                            </option>
+
+                            <option value="no-cumple">
+                                No Cumple
+                            </option>
+
+                            <option value="pendiente">
+                                Pendiente
+                            </option>
+
+                            <option value="en-proceso">
+                                En Proceso
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="modal-footer">
+
+
+                    <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal">
+
+                        Cancelar
+
+                    </button>
+
+
+                    <button
+                        type="button"
+                        id="guardarInspeccion"
+                        class="btn btn-primary">
+
+                        Guardar inspección
+
+                    </button>
+
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div
+        class="modal fade"
+        id="modalCerrarSesion"
+        tabindex="-1"
+        aria-labelledby="tituloCerrarSesion"
+        aria-hidden="true">
+
+
+        <div class="modal-dialog modal-dialog-centered">
+
+
+            <div class="modal-content modal-confirmacion">
+
+
+                <!-- ENCABEZADO -->
+
+                <div class="modal-header">
+
+                    <div class="icono-cerrar-sesion">
+
+                        <i class="bi bi-box-arrow-right"></i>
+
+                    </div>
+
+
+                    <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Cerrar">
+                    </button>
+
+                </div>
+
+                <div class="modal-body text-center">
+
+                    <h5 id="tituloCerrarSesion">
+
+                        ¿Cerrar sesión?
+
+                    </h5>
+
+                    <p>
+
+                        ¿Estás seguro de que deseas cerrar tu sesión?
+
+                    </p>
+
+                </div>
+
+
+                <div class="modal-footer justify-content-center">
+
+                    <button
+                        type="button"
+                        class="btn btn-secondary boton-cancelar"
+                        data-bs-dismiss="modal">
+
+                        No, permanecer
+
+                    </button>
+
+                    <a
+                        href="index.html"
+                        class="btn boton-confirmar">
+
+                        Sí, cerrar sesión
+
+                    </a>
+
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+
+    <script>
+
+
+        const buscador =
+            document.getElementById("buscarInspeccion");
+
+        const filtroEstado =
+            document.getElementById("filtroEstado");
+
+        const cuerpoTabla =
+            document.getElementById("cuerpoTabla");
+
+        const textoRegistros =
+            document.getElementById("textoRegistros");
+
+        const contadorRegistros =
+            document.getElementById("contadorRegistros");
+
+        const totalMes =
+            document.getElementById("totalMes");
+
+
+        function filtrarInspecciones() {
+
+
+            const texto =
+                buscador.value
+                    .toLowerCase()
+                    .trim();
+
+
+            const estado =
+                filtroEstado.value;
+
+
+            const filas =
+                cuerpoTabla.querySelectorAll("tr");
+
+
+            let visibles = 0;
+
+
+            filas.forEach(function (fila) {
+
+
+                const contenido =
+                    fila.textContent.toLowerCase();
+
+
+                const elementoEstado =
+                    fila.querySelector(".estado");
+
+
+                let coincideTexto =
+                    contenido.includes(texto);
+
+
+                let coincideEstado = true;
+
+
+                if (estado !== "todos") {
+
+                    coincideEstado =
+                        elementoEstado.classList.contains(estado);
+
+                }
+
+
+                if (
+                    coincideTexto &&
+                    coincideEstado
+                ) {
+
+                    fila.style.display = "";
+
+                    visibles++;
+
+                } else {
+
+                    fila.style.display = "none";
+
+                }
+
+            });
+
+
+            textoRegistros.textContent =
+                visibles +
+                " inspecciones encontradas";
+
+
+            contadorRegistros.textContent =
+                "Mostrando " +
+                visibles +
+                " de " +
+                filas.length +
+                " registros";
+
+        }
+
+
+        buscador.addEventListener(
+            "input",
+            filtrarInspecciones
+        );
+
+
+        filtroEstado.addEventListener(
+            "change",
+            filtrarInspecciones
+        );
+
+
+        const botonGuardar =
+            document.getElementById(
+                "guardarInspeccion"
+            );
+
+
+        botonGuardar.addEventListener(
+            "click",
+            guardarInspeccion
+        );
+
+
+        function guardarInspeccion() {
+
+
+            const nombre =
+                document
+                    .getElementById("nombreInspeccion")
+                    .value
+                    .trim();
+
+
+            const tipo =
+                document
+                    .getElementById("tipoInspeccion")
+                    .value;
+
+
+            const fecha =
+                document
+                    .getElementById("fechaInspeccion")
+                    .value;
+
+
+            const inspector =
+                document
+                    .getElementById("inspectorInspeccion")
+                    .value;
+
+
+            const resultado =
+                document
+                    .getElementById("resultadoInspeccion")
+                    .value;
+
+
+
+            /* VALIDACIÓN */
+
+            if (
+                nombre === "" ||
+                tipo === "" ||
+                fecha === "" ||
+                inspector === "" ||
+                resultado === ""
+            ) {
+
+                alert(
+                    "Por favor completa todos los campos."
+                );
+
+                return;
+
+            }
+
+
+            const cantidad =
+                cuerpoTabla.querySelectorAll("tr").length + 1;
+
+
+            const id =
+                "INS-" +
+                String(cantidad).padStart(2, "0");
+
+
+            const fechaObjeto =
+                new Date(fecha + "T00:00:00");
+
+
+            const fechaFormateada =
+                fechaObjeto.toLocaleDateString(
+                    "es-ES",
+                    {
+                        day: "2-digit",
+                        month: "short",
+                        year: "numeric"
+                    }
+                );
+            let textoResultado;
+
+
+            if (resultado === "cumple") {
+
+                textoResultado = "Cumple";
+
+            }
+
+            else if (resultado === "no-cumple") {
+
+                textoResultado = "No Cumple";
+
+            }
+
+            else if (resultado === "pendiente") {
+
+                textoResultado = "Pendiente";
+
+            }
+
+            else {
+
+                textoResultado = "En Proceso";
+
+            }
+
+            const fila =
+                document.createElement("tr");
+
+
+            fila.innerHTML = `
+
+                <td class="id-inspeccion">
+                    ${id}
+                </td>
+
+                <td>
+
+                    <strong>
+                        ${nombre}
+                    </strong>
+
+                    <small>
+                        SST-Inspecciones
+                    </small>
+
+                </td>
+
+                <td>
+                    ${tipo}
+                </td>
+
+                <td>
+                    ${fechaFormateada}
+                </td>
+
+                <td>
+                    ${inspector}
+                </td>
+
+                <td>
+
+                    <span class="estado ${resultado}">
+
+                        <span></span>
+
+                        ${textoResultado}
+
+                    </span>
+
+                </td>
+
+            `;
+
+
+            cuerpoTabla.appendChild(fila);
+
+            const total =
+                cuerpoTabla.querySelectorAll("tr").length;
+
+
+            totalMes.textContent =
+                total;
+
+
+            textoRegistros.textContent =
+                total +
+                " inspecciones encontradas";
+
+
+            contadorRegistros.textContent =
+                "Mostrando 1 a " +
+                total +
+                " de " +
+                total +
+                " registros";
+
+            document.getElementById(
+                "nombreInspeccion"
+            ).value = "";
+
+
+            document.getElementById(
+                "tipoInspeccion"
+            ).value = "";
+
+
+            document.getElementById(
+                "fechaInspeccion"
+            ).value = "";
+
+
+            document.getElementById(
+                "inspectorInspeccion"
+            ).value = "";
+
+
+            document.getElementById(
+                "resultadoInspeccion"
+            ).value = "";
+
+            const modal =
+                bootstrap.Modal.getInstance(
+                    document.getElementById(
+                        "modalNuevaInspeccion"
+                    )
+                );
+
+
+            modal.hide();
+
+        }
+
+        const elementosMenu =
+            document.querySelectorAll(
+                ".elemento-menu"
+            );
+
+
+        elementosMenu.forEach(
+            function (elemento) {
+
+
+                elemento.addEventListener(
+                    "click",
+                    function (evento) {
+
+
+                        evento.preventDefault();
+
+
+                        elementosMenu.forEach(
+                            function (item) {
+
+                                item.classList.remove(
+                                    "activo"
+                                );
+
+                            }
+                        );
+
+
+                        elemento.classList.add(
+                            "activo"
+                        );
+
+                    }
+                );
+
+            }
+        );
+
+
+    </script>
+
+
+</body>
+
+</html>
