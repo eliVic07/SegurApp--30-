@@ -11,6 +11,8 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="CSS/style.css">
 
 </head>
@@ -25,60 +27,70 @@
 
                 <div class="text-center mb-4">
 
-                    <img 
-                        src="IMGS/logo.jpg" 
+                    <img
+                        src="IMGS/logo.jpg"
                         alt="Logo SegurApp"
                         class="img-fluid mb-2"
-                        style="max-width: 80px;"
+                        style="max-width: 100px;"
                     >
 
-                    <h5>SegurApp</h5>
-
                 </div>
+
 
                 <nav class="nav flex-column">
 
                     <a href="index.html" class="nav-link text-white">
+                        <i class="bi bi-grid-1x2-fill me-2"></i>
                         Dashboard
                     </a>
 
-                    <a href="empleados.html" class="nav-link active bg-primary text-white rounded">
+                    <a href="empleados.html" class="nav-link active bg-warning text-dark rounded">
+                        <i class="bi bi-people me-2"></i>
                         Empleados
                     </a>
 
                     <a href="#" class="nav-link text-white">
+                        <i class="bi bi-book me-2"></i>
                         Capacitaciones
                     </a>
 
-                    <a href="#" class="nav-link text-white">
+                    <a href="inspecciones.html" class="nav-link text-white">
+                        <i class="bi bi-clipboard-check me-2"></i>
                         Inspecciones
                     </a>
 
                     <a href="#" class="nav-link text-white">
+                        <i class="bi bi-exclamation-triangle me-2"></i>
                         Incidentes y Accidentes
                     </a>
 
                     <a href="#" class="nav-link text-white">
+                        <i class="bi bi-person-badge me-2"></i>
                         EPP
                     </a>
 
                     <a href="#" class="nav-link text-white">
+                        <i class="bi bi-shield-exclamation me-2"></i>
                         Riesgos
                     </a>
 
                     <a href="#" class="nav-link text-white">
+                        <i class="bi bi-folder me-2"></i>
                         Documentos
                     </a>
 
                     <a href="#" class="nav-link text-white">
+                        <i class="bi bi-bell me-2"></i>
                         Alertas
                     </a>
 
                     <a href="#" class="nav-link text-white">
+                        <i class="bi bi-bar-chart me-2"></i>
                         Reportes
                     </a>
 
                     <a href="#" class="nav-link text-white">
+                        <i class="bi bi-gear me-2"></i>
                         Configuración
                     </a>
 
@@ -89,37 +101,126 @@
 
             <main class="col-md-9 col-lg-10 bg-light min-vh-100 p-0">
 
+
                 <nav class="navbar navbar-expand-lg bg-white border-bottom px-4">
 
                     <div class="container-fluid">
 
-                        <span class="navbar-brand fw-bold">
-                            Empleados
-                        </span>
+                        <div>
+
+                            <h5 class="mb-0">
+                                Empleados
+                            </h5>
+
+                            <small class="text-muted">
+                                Gestión y consulta del personal de la organización.
+                            </small>
+
+                        </div>
+
 
                         <div class="d-flex align-items-center gap-3">
 
                             <form class="d-flex">
 
-                                <input 
-                                    class="form-control"
+                                <input
+                                    class="form-control form-control-sm"
                                     type="search"
-                                    placeholder="Buscar..."
+                                    placeholder="Buscar empleado..."
                                 >
 
                             </form>
 
-                            <span>🔔</span>
 
-                            <div class="text-end">
+                            <button class="btn btn-light position-relative">
 
-                                <strong class="d-block">
-                                    SegurApp
-                                </strong>
+                                <i class="bi bi-bell"></i>
 
-                                <small class="text-muted">
-                                    Administrador
-                                </small>
+                                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                    1
+                                </span>
+
+                            </button>
+
+
+                            <div class="dropdown">
+
+                                <button
+                                    class="btn btn-light dropdown-toggle d-flex align-items-center gap-2"
+                                    type="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                >
+
+                                    <span
+                                        class="rounded-circle bg-warning text-dark fw-bold d-flex align-items-center justify-content-center"
+                                        style="width: 40px; height: 40px;"
+                                    >
+                                        SG
+                                    </span>
+
+
+                                    <span class="text-start">
+
+                                        <strong class="d-block">
+                                            SegurApp
+                                        </strong>
+
+                                        <small class="text-muted">
+                                            Administrador
+                                        </small>
+
+                                    </span>
+
+                                </button>
+
+
+                                <ul class="dropdown-menu dropdown-menu-end shadow">
+
+                                    <li>
+
+                                        <a
+                                            class="dropdown-item d-flex align-items-center gap-3 py-3"
+                                            href="#"
+                                        >
+
+                                            <i class="bi bi-person fs-4"></i>
+
+                                            <span>
+
+                                                <strong class="d-block">
+                                                    Mi perfil
+                                                </strong>
+
+                                            </span>
+
+                                        </a>
+
+                                    </li>
+
+
+                                    <li>
+
+                                        <a
+                                            class="dropdown-item d-flex align-items-center gap-3 py-3"
+                                            href="#"
+                                        >
+
+                                            <i class="bi bi-gear fs-4"></i>
+
+                                            <span>
+
+                                                <strong class="d-block">
+                                                    Configuración
+                                                </strong>
+
+                                            </span>
+
+                                        </a>
+
+                                    </li>
+
+                                </ul>
 
                             </div>
 
@@ -132,13 +233,14 @@
 
                 <section class="container-fluid p-4">
 
+
                     <div class="mb-4">
 
-                        <h1 class="fw-bold">
+                        <h1 class="fw-bold mb-1">
                             Empleados
                         </h1>
 
-                        <p class="text-muted">
+                        <p class="text-muted mb-0">
                             Gestión y consulta del personal de la organización.
                         </p>
 
@@ -146,6 +248,7 @@
 
 
                     <div class="row g-4 mb-4">
+
 
                         <div class="col-md-4">
 
@@ -156,7 +259,9 @@
                                     <div class="d-flex align-items-center gap-3">
 
                                         <div class="bg-light rounded p-3">
-                                            👤
+
+                                            <i class="bi bi-people fs-4"></i>
+
                                         </div>
 
                                         <div>
@@ -189,7 +294,9 @@
                                     <div class="d-flex align-items-center gap-3">
 
                                         <div class="bg-primary-subtle rounded p-3">
-                                            👤
+
+                                            <i class="bi bi-person fs-4"></i>
+
                                         </div>
 
                                         <div>
@@ -222,7 +329,9 @@
                                     <div class="d-flex align-items-center gap-3">
 
                                         <div class="bg-danger-subtle rounded p-3">
-                                            👤
+
+                                            <i class="bi bi-person fs-4"></i>
+
                                         </div>
 
                                         <div>
@@ -250,6 +359,7 @@
 
                     <div class="card shadow-sm">
 
+
                         <div class="card-header bg-white p-4">
 
                             <div class="d-flex justify-content-between align-items-center flex-wrap gap-3">
@@ -266,13 +376,15 @@
 
                                 </div>
 
+
                                 <div class="d-flex gap-2 flex-wrap">
 
-                                    <input 
+                                    <input
                                         type="search"
                                         class="form-control"
                                         placeholder="Buscar empleado..."
                                     >
+
 
                                     <select class="form-select">
 
@@ -293,6 +405,7 @@
                                         </option>
 
                                     </select>
+
 
                                     <select class="form-select">
 
@@ -341,7 +454,9 @@
 
                                 </thead>
 
+
                                 <tbody>
+
 
                                     <tr>
 
@@ -349,7 +464,7 @@
 
                                             <div class="d-flex align-items-center gap-2">
 
-                                                <div class="bg-secondary-subtle rounded-circle p-2">
+                                                <div class="bg-secondary-subtle rounded-circle p-2 fw-bold">
                                                     JP
                                                 </div>
 
@@ -397,34 +512,42 @@
 
                                             <div class="dropdown">
 
-                                                <button 
+                                                <button
                                                     class="btn btn-sm btn-light"
                                                     type="button"
                                                     data-bs-toggle="dropdown"
                                                 >
-                                                    ⋮
+                                                    <i class="bi bi-three-dots-vertical"></i>
                                                 </button>
+
 
                                                 <ul class="dropdown-menu">
 
                                                     <li>
+
                                                         <a class="dropdown-item" href="#">
                                                             Ver empleado
                                                         </a>
+
                                                     </li>
 
                                                     <li>
+
                                                         <a class="dropdown-item" href="#">
                                                             Editar empleado
                                                         </a>
+
                                                     </li>
 
                                                     <li>
+
                                                         <hr class="dropdown-divider">
+
                                                     </li>
 
                                                     <li>
-                                                        <a 
+
+                                                        <a
                                                             class="dropdown-item text-danger"
                                                             href="#"
                                                             data-bs-toggle="modal"
@@ -432,6 +555,7 @@
                                                         >
                                                             Desactivar empleado
                                                         </a>
+
                                                     </li>
 
                                                 </ul>
@@ -449,7 +573,7 @@
 
                                             <div class="d-flex align-items-center gap-2">
 
-                                                <div class="bg-secondary-subtle rounded-circle p-2">
+                                                <div class="bg-secondary-subtle rounded-circle p-2 fw-bold">
                                                     ML
                                                 </div>
 
@@ -497,34 +621,42 @@
 
                                             <div class="dropdown">
 
-                                                <button 
+                                                <button
                                                     class="btn btn-sm btn-light"
                                                     type="button"
                                                     data-bs-toggle="dropdown"
                                                 >
-                                                    ⋮
+                                                    <i class="bi bi-three-dots-vertical"></i>
                                                 </button>
+
 
                                                 <ul class="dropdown-menu">
 
                                                     <li>
+
                                                         <a class="dropdown-item" href="#">
                                                             Ver empleado
                                                         </a>
+
                                                     </li>
 
                                                     <li>
+
                                                         <a class="dropdown-item" href="#">
                                                             Editar empleado
                                                         </a>
+
                                                     </li>
 
                                                     <li>
+
                                                         <hr class="dropdown-divider">
+
                                                     </li>
 
                                                     <li>
-                                                        <a 
+
+                                                        <a
                                                             class="dropdown-item text-danger"
                                                             href="#"
                                                             data-bs-toggle="modal"
@@ -532,6 +664,7 @@
                                                         >
                                                             Desactivar empleado
                                                         </a>
+
                                                     </li>
 
                                                 </ul>
@@ -549,7 +682,7 @@
 
                                             <div class="d-flex align-items-center gap-2">
 
-                                                <div class="bg-secondary-subtle rounded-circle p-2">
+                                                <div class="bg-secondary-subtle rounded-circle p-2 fw-bold">
                                                     CR
                                                 </div>
 
@@ -597,34 +730,42 @@
 
                                             <div class="dropdown">
 
-                                                <button 
+                                                <button
                                                     class="btn btn-sm btn-light"
                                                     type="button"
                                                     data-bs-toggle="dropdown"
                                                 >
-                                                    ⋮
+                                                    <i class="bi bi-three-dots-vertical"></i>
                                                 </button>
+
 
                                                 <ul class="dropdown-menu">
 
                                                     <li>
+
                                                         <a class="dropdown-item" href="#">
                                                             Ver empleado
                                                         </a>
+
                                                     </li>
 
                                                     <li>
+
                                                         <a class="dropdown-item" href="#">
                                                             Editar empleado
                                                         </a>
+
                                                     </li>
 
                                                     <li>
+
                                                         <hr class="dropdown-divider">
+
                                                     </li>
 
                                                     <li>
-                                                        <a 
+
+                                                        <a
                                                             class="dropdown-item text-danger"
                                                             href="#"
                                                             data-bs-toggle="modal"
@@ -632,6 +773,7 @@
                                                         >
                                                             Desactivar empleado
                                                         </a>
+
                                                     </li>
 
                                                 </ul>
@@ -649,7 +791,7 @@
 
                                             <div class="d-flex align-items-center gap-2">
 
-                                                <div class="bg-secondary-subtle rounded-circle p-2">
+                                                <div class="bg-secondary-subtle rounded-circle p-2 fw-bold">
                                                     AG
                                                 </div>
 
@@ -697,34 +839,42 @@
 
                                             <div class="dropdown">
 
-                                                <button 
+                                                <button
                                                     class="btn btn-sm btn-light"
                                                     type="button"
                                                     data-bs-toggle="dropdown"
                                                 >
-                                                    ⋮
+                                                    <i class="bi bi-three-dots-vertical"></i>
                                                 </button>
+
 
                                                 <ul class="dropdown-menu">
 
                                                     <li>
+
                                                         <a class="dropdown-item" href="#">
                                                             Ver empleado
                                                         </a>
+
                                                     </li>
 
                                                     <li>
+
                                                         <a class="dropdown-item" href="#">
                                                             Editar empleado
                                                         </a>
+
                                                     </li>
 
                                                     <li>
+
                                                         <hr class="dropdown-divider">
+
                                                     </li>
 
                                                     <li>
-                                                        <a 
+
+                                                        <a
                                                             class="dropdown-item text-danger"
                                                             href="#"
                                                             data-bs-toggle="modal"
@@ -732,6 +882,7 @@
                                                         >
                                                             Desactivar empleado
                                                         </a>
+
                                                     </li>
 
                                                 </ul>
@@ -741,6 +892,7 @@
                                         </td>
 
                                     </tr>
+
 
                                 </tbody>
 
@@ -754,6 +906,7 @@
                             <small class="text-muted">
                                 Mostrando 1 a 4 de 4 empleados
                             </small>
+
 
                             <nav>
 
@@ -796,13 +949,14 @@
                         Desactivar empleado
                     </h5>
 
-                    <button 
+                    <button
                         type="button"
                         class="btn-close"
                         data-bs-dismiss="modal"
                     ></button>
 
                 </div>
+
 
                 <div class="modal-body">
 
@@ -811,9 +965,10 @@
 
                 </div>
 
+
                 <div class="modal-footer">
 
-                    <button 
+                    <button
                         type="button"
                         class="btn btn-secondary"
                         data-bs-dismiss="modal"
@@ -821,7 +976,7 @@
                         Cancelar
                     </button>
 
-                    <button 
+                    <button
                         type="button"
                         class="btn btn-danger"
                     >
@@ -849,13 +1004,14 @@
                         Desactivar empleado
                     </h5>
 
-                    <button 
+                    <button
                         type="button"
                         class="btn-close"
                         data-bs-dismiss="modal"
                     ></button>
 
                 </div>
+
 
                 <div class="modal-body">
 
@@ -864,9 +1020,10 @@
 
                 </div>
 
+
                 <div class="modal-footer">
 
-                    <button 
+                    <button
                         type="button"
                         class="btn btn-secondary"
                         data-bs-dismiss="modal"
@@ -874,7 +1031,7 @@
                         Cancelar
                     </button>
 
-                    <button 
+                    <button
                         type="button"
                         class="btn btn-danger"
                     >
@@ -902,13 +1059,14 @@
                         Desactivar empleado
                     </h5>
 
-                    <button 
+                    <button
                         type="button"
                         class="btn-close"
                         data-bs-dismiss="modal"
                     ></button>
 
                 </div>
+
 
                 <div class="modal-body">
 
@@ -917,9 +1075,10 @@
 
                 </div>
 
+
                 <div class="modal-footer">
 
-                    <button 
+                    <button
                         type="button"
                         class="btn btn-secondary"
                         data-bs-dismiss="modal"
@@ -927,7 +1086,7 @@
                         Cancelar
                     </button>
 
-                    <button 
+                    <button
                         type="button"
                         class="btn btn-danger"
                     >
@@ -955,13 +1114,14 @@
                         Desactivar empleado
                     </h5>
 
-                    <button 
+                    <button
                         type="button"
                         class="btn-close"
                         data-bs-dismiss="modal"
                     ></button>
 
                 </div>
+
 
                 <div class="modal-body">
 
@@ -970,9 +1130,10 @@
 
                 </div>
 
+
                 <div class="modal-footer">
 
-                    <button 
+                    <button
                         type="button"
                         class="btn btn-secondary"
                         data-bs-dismiss="modal"
@@ -980,7 +1141,7 @@
                         Cancelar
                     </button>
 
-                    <button 
+                    <button
                         type="button"
                         class="btn btn-danger"
                     >
