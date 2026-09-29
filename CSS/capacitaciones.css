@@ -1,0 +1,1570 @@
+/* Configuración general */
+
+:root {
+    --azul-oscuro: #071a3a;
+    --azul-principal: #0b2859;
+    --azul-segurapp: #06245c;
+    --azul-claro: #eaf3ff;
+
+    --amarillo: #ffbd17;
+
+    --fondo: #f4f6f9;
+    --blanco: #ffffff;
+
+    --texto: #172033;
+    --texto-secundario: #748096;
+
+    --verde: #20b879;
+    --naranja: #f59f43;
+    --rosado: #e64980;
+
+    --borde: #e4e9f0;
+}
+
+
+/* Cuerpo */
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--fondo);
+    color: var(--texto);
+    min-height: 100vh;
+}
+
+
+/* Barra lateral */
+
+.barra-lateral {
+    width: 180px;
+    min-width: 180px;
+    background-color: var(--azul-oscuro);
+    color: var(--blanco);
+    position: sticky;
+    top: 0;
+    overflow-y: auto;
+}
+
+
+/* Logo */
+
+.barra-lateral .logo {
+    width: 135px;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+
+/* Enlaces del menú */
+
+.enlace-menu {
+    color: #aebbd0 !important;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-height: 44px;
+    padding: 10px 15px !important;
+    font-size: 13px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+
+/* Iconos del menú */
+
+.enlace-menu i {
+    width: 18px;
+    min-width: 18px;
+    font-size: 15px;
+    text-align: center;
+}
+
+
+/* Menú al pasar el mouse */
+
+.enlace-menu:hover {
+    color: var(--blanco) !important;
+    background-color: rgba(255, 255, 255, 0.06);
+}
+
+
+/* Opción activa */
+
+.enlace-menu.activo {
+    color: var(--amarillo) !important;
+    background-color: rgba(255, 255, 255, 0.08);
+    border-left: 3px solid var(--amarillo);
+    padding-left: 12px !important;
+}
+
+
+/* Barra superior */
+
+.navbar {
+    min-height: 58px;
+    border-bottom: 1px solid var(--borde);
+    background-color: var(--blanco) !important;
+}
+
+
+/* Buscador */
+
+.navbar .input-group {
+    width: 220px;
+}
+
+
+/* Icono del buscador */
+
+.navbar .input-group-text {
+    color: #718096;
+    border-color: var(--borde);
+}
+
+
+/* Campo de búsqueda */
+
+.navbar .form-control {
+    border-color: var(--borde);
+    font-size: 13px;
+    box-shadow: none;
+}
+
+
+/* Campo de búsqueda enfocado */
+
+.navbar .form-control:focus {
+    border-color: #9db7d8;
+    box-shadow: none;
+}
+
+
+/* Avatar */
+
+.avatar-usuario {
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: var(--amarillo);
+    color: var(--azul-oscuro);
+    font-size: 11px;
+    font-weight: bold;
+}
+
+
+/* Botón del usuario */
+
+.navbar .dropdown-toggle {
+    border: none;
+    background-color: transparent;
+    box-shadow: none;
+    color: var(--texto);
+}
+
+
+/* Nombre del usuario */
+
+.navbar .dropdown-toggle strong {
+    font-size: 12px;
+}
+
+
+/* Rol del usuario */
+
+.navbar .dropdown-toggle small {
+    color: var(--texto-secundario);
+    font-size: 10px;
+}
+
+
+/* Notificaciones */
+
+.navbar .bi-bell {
+    color: #64748b;
+}
+
+
+/* Menú desplegable */
+
+.dropdown-menu {
+    min-width: 190px;
+    border: 1px solid var(--borde);
+    border-radius: 8px;
+}
+
+
+/* Elementos del menú desplegable */
+
+.dropdown-item {
+    font-size: 13px;
+    padding: 9px 14px;
+}
+
+
+/* Contenido */
+
+main {
+    background-color: var(--fondo);
+    min-width: 0;
+}
+
+
+/* Título */
+
+h1 {
+    color: var(--azul-oscuro);
+}
+
+
+/* Texto debajo del título */
+
+.container-fluid > .mb-3 p {
+    font-size: 12px;
+}
+
+
+/* Tarjetas */
+
+.card {
+    border-radius: 10px !important;
+    border: 1px solid var(--borde) !important;
+    background-color: var(--blanco);
+}
+
+
+/* Iconos de estadísticas */
+
+.icono-estadistica {
+    width: 42px;
+    height: 42px;
+    min-width: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9px;
+    font-size: 18px;
+}
+
+
+/* Icono azul */
+
+.icono-azul {
+    background-color: #e8f2ff;
+    color: #2677d9;
+}
+
+
+/* Icono verde */
+
+.icono-verde {
+    background-color: #e7f9f0;
+    color: var(--verde);
+}
+
+
+/* Icono naranja */
+
+.icono-naranja {
+    background-color: #fff2df;
+    color: var(--naranja);
+}
+
+
+/* Icono rosado */
+
+.icono-rosado {
+    background-color: #ffedf4;
+    color: var(--rosado);
+}
+
+
+/* Números de estadísticas */
+
+.icono-estadistica + div h2 {
+    color: var(--azul-oscuro);
+    font-size: 20px;
+}
+
+
+/* Texto de estadísticas */
+
+.icono-estadistica + div p {
+    font-size: 10px;
+}
+
+
+/* Botón nueva capacitación */
+
+.btn-primary {
+    background-color: var(--azul-oscuro);
+    border-color: var(--azul-oscuro);
+    border-radius: 6px;
+    font-size: 12px;
+    padding: 8px 12px;
+}
+
+
+/* Botón al pasar el mouse */
+
+.btn-primary:hover {
+    background-color: var(--azul-principal);
+    border-color: var(--azul-principal);
+}
+
+
+/* Botones del calendario */
+
+.btn-light {
+    border: 1px solid var(--borde);
+    color: #65748b;
+    background-color: var(--blanco);
+}
+
+
+/* Botones del calendario al pasar el mouse */
+
+.btn-light:hover {
+    background-color: #f1f4f8;
+    border-color: var(--borde);
+}
+
+
+/* Encabezado del calendario */
+
+.card-body h2 {
+    color: var(--azul-oscuro);
+}
+
+
+/* Tabla del calendario */
+
+.table {
+    margin-bottom: 0;
+}
+
+
+/* Encabezado de los días */
+
+.table thead th {
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--texto-secundario);
+    padding: 7px;
+}
+
+
+/* Días del calendario */
+
+.table tbody td {
+    position: relative;
+    height: 38px;
+    padding: 5px;
+    font-size: 11px;
+    color: #334155;
+}
+
+
+/* Día del calendario */
+
+.dia-calendario {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+
+/* Día seleccionado */
+
+.dia-seleccionado {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    background-color: var(--azul-oscuro);
+    color: var(--blanco);
+    font-weight: bold;
+}
+
+
+/* Día con evento */
+
+.dia-con-evento {
+    position: relative;
+}
+
+
+/* Punto del calendario */
+
+.punto-calendario {
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    margin-left: 2px;
+    vertical-align: middle;
+}
+
+
+/* Punto azul */
+
+.punto-azul {
+    background-color: #2185d0;
+}
+
+
+/* Punto verde */
+
+.punto-verde {
+    background-color: #28a86b;
+}
+
+
+/* Punto naranja */
+
+.punto-naranja {
+    background-color: #ed8b28;
+}
+
+
+/* Punto morado */
+
+.punto-morado {
+    background-color: #9b51e0;
+}
+
+
+/* Leyenda */
+
+.leyenda {
+    width: 7px;
+    height: 7px;
+    display: inline-block;
+    margin-right: 4px;
+    border-radius: 50%;
+}
+
+
+/* Caja de fecha */
+
+.caja-fecha {
+    width: 38px;
+    height: 38px;
+    min-width: 38px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #edf5fd;
+    border-radius: 6px;
+}
+
+
+/* Número de fecha */
+
+.caja-fecha strong {
+    color: #2185d0;
+    font-size: 13px;
+    line-height: 13px;
+}
+
+
+/* Mes de fecha */
+
+.caja-fecha small {
+    color: #748096;
+    font-size: 7px;
+    line-height: 9px;
+}
+
+
+/* Información de capacitación */
+
+.caja-fecha + div strong {
+    color: var(--texto);
+    font-size: 11px;
+}
+
+
+/* Hora de capacitación */
+
+.caja-fecha + div small {
+    font-size: 9px;
+}
+
+
+/* Etiquetas */
+
+.badge {
+    font-size: 8px;
+    font-weight: 500;
+    padding: 5px 7px;
+    border-radius: 10px;
+}
+
+
+/* Enlace ver todas */
+
+.text-primary {
+    color: #1976d2 !important;
+}
+
+
+/* Ajuste de las tarjetas */
+
+.row > .col-12 > .card,
+.row > .col-sm-6 > .card,
+.row > .col-xl-3 > .card,
+.row > .col-xl-5 > .card,
+.row > .col-xl-7 > .card {
+    overflow: hidden;
+}
+/* Configuración general */
+
+:root {
+    --azul-oscuro: #071a3a;
+    --azul-principal: #0b2859;
+    --azul-segurapp: #06245c;
+    --azul-claro: #eaf3ff;
+
+    --amarillo: #ffbd17;
+
+    --fondo: #f4f6f9;
+    --blanco: #ffffff;
+
+    --texto: #172033;
+    --texto-secundario: #748096;
+
+    --verde: #20b879;
+    --naranja: #f59f43;
+    --rosado: #e64980;
+
+    --borde: #e4e9f0;
+}
+
+
+/* Cuerpo */
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--fondo);
+    color: var(--texto);
+    min-height: 100vh;
+}
+
+
+/* Barra lateral */
+
+.barra-lateral {
+    width: 180px;
+    min-width: 180px;
+    background-color: var(--azul-oscuro);
+    color: var(--blanco);
+    position: sticky;
+    top: 0;
+    overflow-y: auto;
+}
+
+
+/* Logo */
+
+.barra-lateral .logo {
+    width: 135px;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+
+/* Enlaces del menú */
+
+.enlace-menu {
+    color: #aebbd0 !important;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-height: 44px;
+    padding: 10px 15px !important;
+    font-size: 13px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+
+/* Iconos del menú */
+
+.enlace-menu i {
+    width: 18px;
+    min-width: 18px;
+    font-size: 15px;
+    text-align: center;
+}
+
+
+/* Menú al pasar el mouse */
+
+.enlace-menu:hover {
+    color: var(--blanco) !important;
+    background-color: rgba(255, 255, 255, 0.06);
+}
+
+
+/* Opción activa */
+
+.enlace-menu.activo {
+    color: var(--amarillo) !important;
+    background-color: rgba(255, 255, 255, 0.08);
+    border-left: 3px solid var(--amarillo);
+    padding-left: 12px !important;
+}
+
+
+/* Barra superior */
+
+.navbar {
+    min-height: 58px;
+    border-bottom: 1px solid var(--borde);
+    background-color: var(--blanco) !important;
+}
+
+
+/* Buscador */
+
+.navbar .input-group {
+    width: 220px;
+}
+
+
+/* Icono del buscador */
+
+.navbar .input-group-text {
+    color: #718096;
+    border-color: var(--borde);
+}
+
+
+/* Campo de búsqueda */
+
+.navbar .form-control {
+    border-color: var(--borde);
+    font-size: 13px;
+    box-shadow: none;
+}
+
+
+/* Campo de búsqueda enfocado */
+
+.navbar .form-control:focus {
+    border-color: #9db7d8;
+    box-shadow: none;
+}
+
+
+/* Avatar */
+
+.avatar-usuario {
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: var(--amarillo);
+    color: var(--azul-oscuro);
+    font-size: 11px;
+    font-weight: bold;
+}
+
+
+/* Botón del usuario */
+
+.navbar .dropdown-toggle {
+    border: none;
+    background-color: transparent;
+    box-shadow: none;
+    color: var(--texto);
+}
+
+
+/* Nombre del usuario */
+
+.navbar .dropdown-toggle strong {
+    font-size: 12px;
+}
+
+
+/* Rol del usuario */
+
+.navbar .dropdown-toggle small {
+    color: var(--texto-secundario);
+    font-size: 10px;
+}
+
+
+/* Notificaciones */
+
+.navbar .bi-bell {
+    color: #64748b;
+}
+
+
+/* Menú desplegable */
+
+.dropdown-menu {
+    min-width: 190px;
+    border: 1px solid var(--borde);
+    border-radius: 8px;
+}
+
+
+/* Elementos del menú desplegable */
+
+.dropdown-item {
+    font-size: 13px;
+    padding: 9px 14px;
+}
+
+
+/* Contenido */
+
+main {
+    background-color: var(--fondo);
+    min-width: 0;
+}
+
+
+/* Título */
+
+h1 {
+    color: var(--azul-oscuro);
+}
+
+
+/* Texto debajo del título */
+
+.container-fluid > .mb-3 p {
+    font-size: 12px;
+}
+
+
+/* Tarjetas */
+
+.card {
+    border-radius: 10px !important;
+    border: 1px solid var(--borde) !important;
+    background-color: var(--blanco);
+}
+
+
+/* Iconos de estadísticas */
+
+.icono-estadistica {
+    width: 42px;
+    height: 42px;
+    min-width: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9px;
+    font-size: 18px;
+}
+
+
+/* Icono azul */
+
+.icono-azul {
+    background-color: #e8f2ff;
+    color: #2677d9;
+}
+
+
+/* Icono verde */
+
+.icono-verde {
+    background-color: #e7f9f0;
+    color: var(--verde);
+}
+
+
+/* Icono naranja */
+
+.icono-naranja {
+    background-color: #fff2df;
+    color: var(--naranja);
+}
+
+
+/* Icono rosado */
+
+.icono-rosado {
+    background-color: #ffedf4;
+    color: var(--rosado);
+}
+
+
+/* Números de estadísticas */
+
+.icono-estadistica + div h2 {
+    color: var(--azul-oscuro);
+    font-size: 20px;
+}
+
+
+/* Texto de estadísticas */
+
+.icono-estadistica + div p {
+    font-size: 10px;
+}
+
+
+/* Botón nueva capacitación */
+
+.btn-primary {
+    background-color: var(--azul-oscuro);
+    border-color: var(--azul-oscuro);
+    border-radius: 6px;
+    font-size: 12px;
+    padding: 8px 12px;
+}
+
+
+/* Botón al pasar el mouse */
+
+.btn-primary:hover {
+    background-color: var(--azul-principal);
+    border-color: var(--azul-principal);
+}
+
+
+/* Botones del calendario */
+
+.btn-light {
+    border: 1px solid var(--borde);
+    color: #65748b;
+    background-color: var(--blanco);
+}
+
+
+/* Botones del calendario al pasar el mouse */
+
+.btn-light:hover {
+    background-color: #f1f4f8;
+    border-color: var(--borde);
+}
+
+
+/* Encabezado del calendario */
+
+.card-body h2 {
+    color: var(--azul-oscuro);
+}
+
+
+/* Tabla del calendario */
+
+.table {
+    margin-bottom: 0;
+}
+
+
+/* Encabezado de los días */
+
+.table thead th {
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--texto-secundario);
+    padding: 7px;
+}
+
+
+/* Días del calendario */
+
+.table tbody td {
+    position: relative;
+    height: 38px;
+    padding: 5px;
+    font-size: 11px;
+    color: #334155;
+}
+
+
+/* Día del calendario */
+
+.dia-calendario {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+
+/* Día seleccionado */
+
+.dia-seleccionado {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    background-color: var(--azul-oscuro);
+    color: var(--blanco);
+    font-weight: bold;
+}
+
+
+/* Día con evento */
+
+.dia-con-evento {
+    position: relative;
+}
+
+
+/* Punto del calendario */
+
+.punto-calendario {
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    margin-left: 2px;
+    vertical-align: middle;
+}
+
+
+/* Punto azul */
+
+.punto-azul {
+    background-color: #2185d0;
+}
+
+
+/* Punto verde */
+
+.punto-verde {
+    background-color: #28a86b;
+}
+
+
+/* Punto naranja */
+
+.punto-naranja {
+    background-color: #ed8b28;
+}
+
+
+/* Punto morado */
+
+.punto-morado {
+    background-color: #9b51e0;
+}
+
+
+/* Leyenda */
+
+.leyenda {
+    width: 7px;
+    height: 7px;
+    display: inline-block;
+    margin-right: 4px;
+    border-radius: 50%;
+}
+
+
+/* Caja de fecha */
+
+.caja-fecha {
+    width: 38px;
+    height: 38px;
+    min-width: 38px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #edf5fd;
+    border-radius: 6px;
+}
+
+
+/* Número de fecha */
+
+.caja-fecha strong {
+    color: #2185d0;
+    font-size: 13px;
+    line-height: 13px;
+}
+
+
+/* Mes de fecha */
+
+.caja-fecha small {
+    color: #748096;
+    font-size: 7px;
+    line-height: 9px;
+}
+
+
+/* Información de capacitación */
+
+.caja-fecha + div strong {
+    color: var(--texto);
+    font-size: 11px;
+}
+
+
+/* Hora de capacitación */
+
+.caja-fecha + div small {
+    font-size: 9px;
+}
+
+
+/* Etiquetas */
+
+.badge {
+    font-size: 8px;
+    font-weight: 500;
+    padding: 5px 7px;
+    border-radius: 10px;
+}
+
+
+/* Enlace ver todas */
+
+.text-primary {
+    color: #1976d2 !important;
+}
+
+
+/* Ajuste de las tarjetas */
+
+.row > .col-12 > .card,
+.row > .col-sm-6 > .card,
+.row > .col-xl-3 > .card,
+.row > .col-xl-5 > .card,
+.row > .col-xl-7 > .card {
+    overflow: hidden;
+}
+/* Diseño para tablet */
+
+@media (max-width: 992px) {
+
+    aside.col-auto {
+        flex: 0 0 160px !important;
+        width: 160px !important;
+        max-width: 160px !important;
+    }
+
+    .barra-lateral {
+        width: 160px;
+        min-width: 160px;
+    }
+
+    .enlace-menu {
+        font-size: 12px;
+        padding: 9px 10px !important;
+    }
+
+    .enlace-menu i {
+        font-size: 14px;
+    }
+
+    .navbar .input-group {
+        width: 180px;
+    }
+
+}
+
+
+/* Diseño para celular */
+
+@media (max-width: 768px) {
+
+    /* Barra lateral */
+
+    aside.col-auto {
+        flex: 0 0 65px !important;
+        width: 65px !important;
+        max-width: 65px !important;
+    }
+
+    .barra-lateral {
+        width: 65px !important;
+        min-width: 65px !important;
+        height: 100vh !important;
+        position: sticky;
+        top: 0;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+
+    /* Logo */
+
+    .barra-lateral .logo {
+        width: 45px !important;
+        max-width: 45px !important;
+    }
+
+    .barra-lateral .text-center {
+        padding: 12px 5px !important;
+    }
+
+
+    /* Menú */
+
+    .barra-lateral .nav {
+        display: flex !important;
+    }
+
+    .enlace-menu {
+        width: 65px !important;
+        min-height: 48px;
+        justify-content: center;
+        padding: 10px 5px !important;
+        gap: 0;
+    }
+
+
+    /* Iconos */
+
+    .enlace-menu i {
+        width: auto;
+        min-width: auto;
+        font-size: 17px;
+    }
+
+
+    /* Texto */
+
+    .enlace-menu span {
+        display: none;
+    }
+
+
+    /* Opción activa */
+
+    .enlace-menu.activo {
+        border-left: 3px solid var(--amarillo);
+        padding-left: 2px !important;
+    }
+
+
+    /* Contenido principal */
+
+    main.col {
+        width: calc(100% - 65px) !important;
+        flex: 1 1 auto !important;
+        min-width: 0 !important;
+    }
+
+
+    /* Barra superior */
+
+    .navbar {
+        min-height: 55px;
+        padding: 8px 10px !important;
+    }
+
+    .navbar > .container-fluid {
+        padding: 0 !important;
+    }
+
+
+    /* Buscador */
+
+    .navbar .input-group {
+        width: 135px;
+    }
+
+    .navbar .form-control {
+        font-size: 11px;
+    }
+
+    .navbar .input-group-text {
+        padding: 6px 7px;
+    }
+
+
+    /* Usuario */
+
+    .navbar .dropdown-toggle {
+        padding: 2px;
+    }
+
+    .navbar .dropdown-toggle strong,
+    .navbar .dropdown-toggle small {
+        display: none;
+    }
+
+    .avatar-usuario {
+        width: 30px;
+        height: 30px;
+        font-size: 10px;
+    }
+
+
+    /* Contenido */
+
+    .container-fluid.p-4 {
+        padding: 14px !important;
+    }
+
+    h1 {
+        font-size: 21px;
+    }
+
+    .container-fluid > .mb-3 p {
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+
+    /* Estadísticas */
+
+    .icono-estadistica {
+        width: 40px;
+        height: 40px;
+        min-width: 40px;
+    }
+
+    .icono-estadistica + div h2 {
+        font-size: 18px;
+    }
+
+    .icono-estadistica + div p {
+        font-size: 9px;
+    }
+
+    .icono-estadistica + div span {
+        font-size: 9px;
+    }
+
+
+    /* Botón */
+
+    .btn-primary {
+        width: 100%;
+    }
+
+
+    /* Tarjetas */
+
+    .card {
+        width: 100%;
+    }
+
+}
+
+
+/* Diseño para celular pequeño */
+
+@media (max-width: 576px) {
+
+    /* Barra lateral */
+
+    aside.col-auto {
+        flex: 0 0 58px !important;
+        width: 58px !important;
+        max-width: 58px !important;
+    }
+
+    .barra-lateral {
+        width: 58px !important;
+        min-width: 58px !important;
+    }
+
+    .barra-lateral .logo {
+        width: 42px !important;
+        max-width: 42px !important;
+    }
+
+    .enlace-menu {
+        width: 58px !important;
+        min-height: 45px;
+    }
+
+
+    /* Contenido */
+
+    main.col {
+        width: calc(100% - 58px) !important;
+    }
+
+
+    /* Barra superior */
+
+    .navbar .input-group {
+        width: 115px;
+    }
+
+    .navbar .bi-bell {
+        font-size: 16px;
+    }
+
+    .avatar-usuario {
+        width: 28px;
+        height: 28px;
+        font-size: 9px;
+    }
+
+
+    /* Contenido */
+
+    .container-fluid.p-4 {
+        padding: 11px !important;
+    }
+
+    h1 {
+        font-size: 19px;
+    }
+
+
+    /* Tarjetas */
+
+    .card-body {
+        padding: 12px;
+    }
+
+    .icono-estadistica {
+        width: 37px;
+        height: 37px;
+        min-width: 37px;
+        font-size: 15px;
+    }
+
+    .icono-estadistica + div h2 {
+        font-size: 17px;
+    }
+
+    .icono-estadistica + div p {
+        font-size: 8px;
+    }
+
+
+    /* Calendario */
+
+    .card-body h2 {
+        font-size: 14px;
+    }
+
+    .table thead th {
+        font-size: 8px;
+        padding: 5px 2px;
+    }
+
+    .table tbody td {
+        height: 31px;
+        padding: 3px 2px;
+        font-size: 9px;
+    }
+
+    .dia-calendario {
+        width: 21px;
+        height: 21px;
+    }
+
+    .dia-seleccionado {
+        width: 23px;
+        height: 23px;
+    }
+
+    .punto-calendario {
+        width: 4px;
+        height: 4px;
+    }
+
+
+    /* Próximas capacitaciones */
+
+    .caja-fecha {
+        width: 35px;
+        min-width: 35px;
+        height: 35px;
+    }
+
+    .caja-fecha strong {
+        font-size: 11px;
+    }
+
+    .caja-fecha small {
+        font-size: 6px;
+    }
+
+    .caja-fecha + div {
+        min-width: 0;
+    }
+
+    .caja-fecha + div strong {
+        font-size: 9px;
+    }
+
+    .caja-fecha + div small {
+        font-size: 7px;
+    }
+
+    .badge {
+        font-size: 6px;
+        padding: 3px 4px;
+    }
+
+}
+
+
+/* Diseño para celular muy pequeño */
+
+@media (max-width: 400px) {
+
+    /* Barra lateral */
+
+    aside.col-auto {
+        flex: 0 0 52px !important;
+        width: 52px !important;
+        max-width: 52px !important;
+    }
+
+    .barra-lateral {
+        width: 52px !important;
+        min-width: 52px !important;
+    }
+
+    .barra-lateral .logo {
+        width: 38px !important;
+        max-width: 38px !important;
+    }
+
+    .enlace-menu {
+        width: 52px !important;
+        min-height: 42px;
+    }
+
+    .enlace-menu i {
+        font-size: 15px;
+    }
+
+
+    /* Contenido */
+
+    main.col {
+        width: calc(100% - 52px) !important;
+    }
+
+
+    /* Barra superior */
+
+    .navbar .input-group {
+        width: 95px;
+    }
+
+    .navbar .bi-bell {
+        font-size: 14px;
+    }
+
+    .avatar-usuario {
+        width: 26px;
+        height: 26px;
+        font-size: 8px;
+    }
+
+
+    /* Contenido */
+
+    .container-fluid.p-4 {
+        padding: 9px !important;
+    }
+
+    h1 {
+        font-size: 17px;
+    }
+
+    .container-fluid > .mb-3 p {
+        font-size: 9px;
+    }
+
+
+    /* Tarjetas */
+
+    .card-body {
+        padding: 9px;
+    }
+
+    .icono-estadistica {
+        width: 34px;
+        height: 34px;
+        min-width: 34px;
+        font-size: 14px;
+    }
+
+    .icono-estadistica + div h2 {
+        font-size: 15px;
+    }
+
+    .icono-estadistica + div p {
+        font-size: 7px;
+    }
+
+
+    /* Calendario */
+
+    .table thead th {
+        font-size: 7px;
+        padding: 3px 1px;
+    }
+
+    .table tbody td {
+        height: 28px;
+        font-size: 8px;
+        padding: 2px 1px;
+    }
+
+    .dia-calendario {
+        width: 19px;
+        height: 19px;
+    }
+
+    .dia-seleccionado {
+        width: 21px;
+        height: 21px;
+    }
+
+
+    /* Próximas capacitaciones */
+
+    .caja-fecha {
+        width: 32px;
+        min-width: 32px;
+        height: 32px;
+    }
+
+    .caja-fecha + div strong {
+        font-size: 8px;
+    }
+
+    .caja-fecha + div small {
+        font-size: 6px;
+    }
+
+}
+.barra-lateral {
+    background-color: #071a3a !important;
+}
+
+.enlace-menu {
+    color: #aebbd0 !important;
+}
+
+.enlace-menu.activo {
+    color: #ffbd17 !important;
+}
+
