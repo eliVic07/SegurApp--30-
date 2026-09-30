@@ -1,127 +1,199 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
     <title>SegurApp - Dashboard</title>
 
-    <!-- Bootstrap 5 -->
-    <link 
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
         rel="stylesheet"
     >
 
-    <!-- Bootstrap Icons -->
-    <link 
-        rel="stylesheet" 
+    <link
+        rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     >
 
-    <!-- CSS propio -->
-    <link rel="stylesheet" href="CSS/Dashboard.css">
+    <link
+        rel="stylesheet"
+        href="CSS/dashboard.css"
+    >
+
 </head>
+
 
 <body>
 
-<div class="dashboard-container">
 
-    <!-- ==========================================
-         SIDEBAR DESKTOP
-    =========================================== -->
+<div class="contenedor-dashboard">
 
-    <aside class="sidebar d-none d-lg-flex flex-column">
+    <aside class="barra-lateral d-none d-lg-flex flex-column">
 
-        <!-- LOGO -->
-        <div class="logo-container">
-            <img src="IMGS/logoSegurApp.png" alt="SegurApp" class="logo">
+
+        <div class="contenedor-logo">
+
+            <img
+                src="IMGS/logoSegurApp.png"
+                alt="Logo SegurApp"
+                class="logo"
+            >
+
         </div>
 
-        <!-- MENÚ -->
-        <nav class="sidebar-menu">
+        <nav class="menu-lateral">
 
-            <a href="#" class="menu-item active">
+            <a
+                href="dashboard.html"
+                class="elemento-menu activo"
+            >
+
                 <i class="bi bi-grid-1x2"></i>
+
                 <span>Dashboard</span>
+
             </a>
 
-            <a href="#" class="menu-item">
+            <a
+                href="empleados.html"
+                class="elemento-menu"
+            >
+
                 <i class="bi bi-people"></i>
+
                 <span>Empleados</span>
+
             </a>
 
-            <a href="#" class="menu-item">
+            <a
+                href="capacitaciones.html"
+                class="elemento-menu"
+            >
+
                 <i class="bi bi-book"></i>
+
                 <span>Capacitaciones</span>
+
             </a>
 
-            <a href="#" class="menu-item">
+            <a
+                href="inspecciones.html"
+                class="elemento-menu"
+            >
+
                 <i class="bi bi-clipboard-check"></i>
+
                 <span>Inspecciones</span>
+
             </a>
 
-            <a href="#" class="menu-item">
+            <a
+                href="#"
+                class="elemento-menu"
+            >
+
                 <i class="bi bi-exclamation-triangle"></i>
+
                 <span>Incidentes y Accidentes</span>
+
             </a>
 
-            <a href="#" class="menu-item">
+            <a
+                href="#"
+                class="elemento-menu"
+            >
+
                 <i class="bi bi-shield-check"></i>
+
                 <span>EPP</span>
+
             </a>
 
-            <a href="#" class="menu-item">
+            <a
+                href="#"
+                class="elemento-menu"
+            >
+
                 <i class="bi bi-shield"></i>
+
                 <span>Riesgos</span>
+
             </a>
 
-            <a href="#" class="menu-item">
+            <a
+                href="#"
+                class="elemento-menu"
+            >
+
                 <i class="bi bi-folder"></i>
+
                 <span>Documentos</span>
+
             </a>
 
-            <a href="#" class="menu-item">
+            <a
+                href="#"
+                class="elemento-menu"
+            >
+
                 <i class="bi bi-bell"></i>
+
                 <span>Alertas</span>
+
             </a>
 
-            <a href="#" class="menu-item">
+            <a
+                href="#"
+                class="elemento-menu"
+            >
+
                 <i class="bi bi-bar-chart"></i>
+
                 <span>Reportes</span>
+
             </a>
 
-            <a href="#" class="menu-item">
+            <a
+                href="#"
+                class="elemento-menu"
+            >
+
                 <i class="bi bi-gear"></i>
+
                 <span>Configuración</span>
+
             </a>
+
 
         </nav>
 
-        <!-- DECORACIÓN INFERIOR -->
-        <div class="sidebar-decoration"></div>
+        <div class="decoracion-lateral"></div>
 
     </aside>
 
-
-    <!-- ==========================================
-         MENÚ MOBILE - OFFCANVAS BOOTSTRAP
-    =========================================== -->
-
-    <div 
-        class="offcanvas offcanvas-start mobile-sidebar"
+    <div
+        class="offcanvas offcanvas-start menu-movil"
         tabindex="-1"
-        id="mobileMenu"
+        id="menuMovil"
     >
+
 
         <div class="offcanvas-header">
 
-            <img 
-                src="IMGS/logoSegurApp.png" 
-                alt="SegurApp" 
-                class="mobile-logo"
+            <img
+                src="logoSegurApp.png"
+                alt="Logo SegurApp"
+                class="logo-movil"
             >
 
-            <button 
+            <button
                 type="button"
                 class="btn-close btn-close-white"
                 data-bs-dismiss="offcanvas"
@@ -129,383 +201,499 @@
 
         </div>
 
+
         <div class="offcanvas-body">
 
-            <nav class="sidebar-menu">
 
-                <a href="#" class="menu-item active">
+            <nav class="menu-lateral">
+
+
+                <a
+                    href="dashboard.html"
+                    class="elemento-menu activo"
+                >
+
                     <i class="bi bi-grid-1x2"></i>
+
                     <span>Dashboard</span>
+
                 </a>
 
-                <a href="#" class="menu-item">
+
+                <a
+                    href="empleados.html"
+                    class="elemento-menu"
+                >
+
                     <i class="bi bi-people"></i>
+
                     <span>Empleados</span>
+
                 </a>
 
-                <a href="#" class="menu-item">
+
+                <a
+                    href="capacitaciones.html"
+                    class="elemento-menu"
+                >
+
                     <i class="bi bi-book"></i>
+
                     <span>Capacitaciones</span>
+
                 </a>
 
-                <a href="#" class="menu-item">
+
+                <a
+                    href="inspecciones.html"
+                    class="elemento-menu"
+                >
+
                     <i class="bi bi-clipboard-check"></i>
+
                     <span>Inspecciones</span>
+
                 </a>
 
-                <a href="#" class="menu-item">
+
+                <a
+                    href="#"
+                    class="elemento-menu"
+                >
+
                     <i class="bi bi-exclamation-triangle"></i>
+
                     <span>Incidentes y Accidentes</span>
+
                 </a>
 
-                <a href="#" class="menu-item">
+
+                <a
+                    href="#"
+                    class="elemento-menu"
+                >
+
                     <i class="bi bi-shield-check"></i>
+
                     <span>EPP</span>
+
                 </a>
 
-                <a href="#" class="menu-item">
+
+                <a
+                    href="#"
+                    class="elemento-menu"
+                >
+
                     <i class="bi bi-shield"></i>
+
                     <span>Riesgos</span>
+
                 </a>
 
-                <a href="#" class="menu-item">
+
+                <a
+                    href="#"
+                    class="elemento-menu"
+                >
+
                     <i class="bi bi-folder"></i>
+
                     <span>Documentos</span>
+
                 </a>
 
-                <a href="#" class="menu-item">
+
+                <a
+                    href="#"
+                    class="elemento-menu"
+                >
+
                     <i class="bi bi-bell"></i>
+
                     <span>Alertas</span>
+
                 </a>
 
-                <a href="#" class="menu-item">
+
+                <a
+                    href="#"
+                    class="elemento-menu"
+                >
+
                     <i class="bi bi-bar-chart"></i>
+
                     <span>Reportes</span>
+
                 </a>
 
-                <a href="#" class="menu-item">
+
+                <a
+                    href="#"
+                    class="elemento-menu"
+                >
+
                     <i class="bi bi-gear"></i>
+
                     <span>Configuración</span>
+
                 </a>
+
 
             </nav>
 
         </div>
+
     </div>
 
+    <main class="contenido-principal">
 
-    <!-- ==========================================
-         CONTENIDO PRINCIPAL
-    =========================================== -->
+        <header class="barra-superior">
 
-    <main class="main-content">
-
-        <!-- ======================================
-             TOPBAR
-        ======================================= -->
-
-        <header class="topbar">
 
             <div class="d-flex align-items-center">
 
-                <!-- BOTÓN MOBILE -->
+
+                <!-- BOTÓN MENÚ CELULAR -->
+
                 <button
-                    class="btn mobile-menu-button d-lg-none me-3"
+                    class="boton-menu-movil d-lg-none me-3"
                     type="button"
                     data-bs-toggle="offcanvas"
-                    data-bs-target="#mobileMenu"
+                    data-bs-target="#menuMovil"
                 >
+
                     <i class="bi bi-list"></i>
+
                 </button>
 
-                <div>
-                    <h1 class="page-title">Dashboard</h1>
-                </div>
+
+                <h1 class="titulo-pagina">
+                    Dashboard
+                </h1>
+
 
             </div>
 
+            <div class="parte-derecha">
 
-            <!-- PARTE DERECHA TOPBAR -->
-
-            <div class="topbar-right">
-
-                <!-- BUSCADOR -->
-
-                <div class="search-box">
+                <div class="buscador">
 
                     <i class="bi bi-search"></i>
 
-                    <input 
+                    <input
                         type="text"
                         placeholder="Buscar..."
                     >
 
                 </div>
 
-
-                <!-- NOTIFICACIONES -->
-
-                <button class="notification-button">
+                <button
+                    class="boton-notificaciones"
+                    type="button"
+                >
 
                     <i class="bi bi-bell"></i>
 
-                    <span class="notification-number">
+                    <span class="numero-notificaciones">
                         3
                     </span>
 
                 </button>
 
-
-                
-
-                <!-- USUARIO / MENÚ DESPLEGABLE -->
-<div class="dropdown">
-
-    <button 
-        class="user-profile dropdown-toggle"
-        type="button"
-        data-bs-toggle="dropdown"
-        aria-expanded="false"
-    >
-
-        <div class="user-avatar">
-            SG
-        </div>
-
-        <div class="user-information">
-
-            <strong>SegurApp</strong>
-
-            <small>Administrador</small>
-
-        </div>
-
-    </button>
+                <div class="dropdown">
 
 
-    <!-- MENÚ DESPLEGABLE -->
+                    <button
+                        class="perfil-usuario dropdown-toggle"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                    >
 
-    <ul class="dropdown-menu dropdown-menu-end user-dropdown">
+                        <div class="avatar">
+                            SG
+                        </div>
 
-        <li class="user-dropdown-header">
+                        <div class="informacion-usuario">
 
-            <div class="user-avatar dropdown-avatar">
-                SG
+                            <strong>
+                                SegurApp
+                            </strong>
+
+                            <small>
+                                Administrador
+                            </small>
+
+                        </div>
+
+
+                    </button>
+
+                    <ul class="dropdown-menu dropdown-menu-end menu-usuario">
+
+                        <li class="encabezado-usuario">
+
+
+                            <div class="avatar avatar-menu">
+                                SG
+                            </div>
+
+
+                            <div class="informacion-menu">
+
+                                <strong>
+                                    SegurApp
+                                </strong>
+
+                                <small>
+                                    Administrador
+                                </small>
+
+                            </div>
+
+
+                        </li>
+
+
+
+                        <li>
+
+                            <hr class="dropdown-divider">
+
+                        </li>
+
+                        <li>
+
+                            <a
+                                class="dropdown-item"
+                                href="#"
+                            >
+
+                                <i class="bi bi-person"></i>
+
+                                <span>
+                                    Mi perfil
+                                </span>
+
+                            </a>
+
+                        </li>
+
+                        <li>
+
+                            <a
+                                class="dropdown-item"
+                                href="#"
+                            >
+
+                                <i class="bi bi-gear"></i>
+
+                                <span>
+                                    Configuración
+                                </span>
+
+                            </a>
+
+                        </li>
+
+
+                    </ul>
+
+
+                </div>
+
+
             </div>
 
-            <div class="user-dropdown-information">
-
-                <strong>SegurApp</strong>
-
-                <small>Administrador</small>
-
-            </div>
-
-        </li>
-
-
-        <li>
-            <hr class="dropdown-divider">
-        </li>
-
-
-        <li>
-            <a class="dropdown-item" href="#">
-
-                <i class="bi bi-person"></i>
-
-                <span>
-                    Mi perfil
-                </span>
-
-            </a>
-        </li>
-
-
-        <li>
-            <a class="dropdown-item" href="#">
-
-                <i class="bi bi-gear"></i>
-
-                <span>
-                    Configuración
-                </span>
-
-            </a>
-        </li>
-
-    </ul>
-
-</div>
-
-            </div>
 
         </header>
 
+        <section class="seccion-bienvenida">
 
-        <!-- ======================================
-             BIENVENIDA
-        ======================================= -->
-
-        <section class="welcome-section">
 
             <h2>
-                Buenos días, SegurApp
+                Buenos días, SegurApp 👋
             </h2>
+
 
             <p>
                 Resumen general de Seguridad y Salud en el Trabajo.
             </p>
 
+
         </section>
-
-
-        <!-- ======================================
-             TARJETAS KPI
-        ======================================= -->
 
         <section class="row g-3 mb-3">
 
-            <!-- EMPLEADOS -->
-
             <div class="col-12 col-sm-6 col-xl-3">
 
-                <div class="card dashboard-card kpi-card">
 
-                    <div class="kpi-icon employees-icon">
+                <div class="tarjeta-dashboard tarjeta-indicador">
+
+
+                    <div class="icono-indicador empleados-icono">
+
                         <i class="bi bi-people"></i>
+
                     </div>
 
-                    <div class="kpi-information">
 
-                        <span class="kpi-number">
+                    <div class="informacion-indicador">
+
+                        <span class="numero-indicador">
                             28
                         </span>
 
-                        <span class="kpi-title">
+                        <span class="titulo-indicador">
                             Empleados activos
                         </span>
 
                     </div>
 
-                    <button class="card-options">
+
+                    <button class="opciones-tarjeta">
+
                         <i class="bi bi-three-dots-vertical"></i>
+
                     </button>
+
 
                 </div>
 
+
             </div>
-
-
-            <!-- CAPACITACIONES -->
 
             <div class="col-12 col-sm-6 col-xl-3">
 
-                <div class="card dashboard-card kpi-card">
 
-                    <div class="kpi-icon training-icon">
+                <div class="tarjeta-dashboard tarjeta-indicador">
+
+
+                    <div class="icono-indicador capacitaciones-icono">
+
                         <i class="bi bi-book"></i>
+
                     </div>
 
-                    <div class="kpi-information">
 
-                        <span class="kpi-number">
+                    <div class="informacion-indicador">
+
+                        <span class="numero-indicador">
                             12
                         </span>
 
-                        <span class="kpi-title">
+                        <span class="titulo-indicador">
                             Capacitaciones
                         </span>
 
                     </div>
 
-                    <button class="card-options">
+
+                    <button class="opciones-tarjeta">
+
                         <i class="bi bi-three-dots-vertical"></i>
+
                     </button>
+
 
                 </div>
 
+
             </div>
+
 
 
             <!-- INSPECCIONES -->
 
             <div class="col-12 col-sm-6 col-xl-3">
 
-                <div class="card dashboard-card kpi-card">
 
-                    <div class="kpi-icon inspections-icon">
+                <div class="tarjeta-dashboard tarjeta-indicador">
+
+
+                    <div class="icono-indicador inspecciones-icono">
+
                         <i class="bi bi-clipboard-check"></i>
+
                     </div>
 
-                    <div class="kpi-information">
 
-                        <span class="kpi-number">
+                    <div class="informacion-indicador">
+
+                        <span class="numero-indicador">
                             9
                         </span>
 
-                        <span class="kpi-title">
+                        <span class="titulo-indicador">
                             Inspecciones
                         </span>
 
                     </div>
 
-                    <button class="card-options">
+
+                    <button class="opciones-tarjeta">
+
                         <i class="bi bi-three-dots-vertical"></i>
+
                     </button>
+
 
                 </div>
 
+
             </div>
-
-
-            <!-- INCIDENTES -->
 
             <div class="col-12 col-sm-6 col-xl-3">
 
-                <div class="card dashboard-card kpi-card">
 
-                    <div class="kpi-icon incidents-icon">
+                <div class="tarjeta-dashboard tarjeta-indicador">
+
+
+                    <div class="icono-indicador incidentes-icono">
+
                         <i class="bi bi-exclamation-triangle"></i>
+
                     </div>
 
-                    <div class="kpi-information">
 
-                        <span class="kpi-number">
+                    <div class="informacion-indicador">
+
+                        <span class="numero-indicador">
                             5
                         </span>
 
-                        <span class="kpi-title">
+                        <span class="titulo-indicador">
                             Incidentes abiertos
                         </span>
 
                     </div>
 
-                    <button class="card-options">
+
+                    <button class="opciones-tarjeta">
+
                         <i class="bi bi-three-dots-vertical"></i>
+
                     </button>
+
 
                 </div>
 
+
             </div>
+
 
         </section>
 
-
-        <!-- ======================================
-             CUMPLIMIENTO + ALERTAS
-        ======================================= -->
-
         <section class="row g-3 mb-3">
-
-
-            <!-- CUMPLIMIENTO -->
 
             <div class="col-12 col-xl-5">
 
-                <div class="card dashboard-card compliance-card">
 
-                    <div class="card-header-custom">
+                <div class="tarjeta-dashboard tarjeta-cumplimiento">
+
+
+                    <div class="encabezado-tarjeta">
 
                         <h3>
                             Cumplimiento SG-SST
@@ -514,13 +702,12 @@
                     </div>
 
 
-                    <div class="compliance-content">
+                    <div class="contenido-cumplimiento">
 
-                        <!-- CÍRCULO -->
+                        <div class="circulo-progreso">
 
-                        <div class="progress-circle">
 
-                            <div class="progress-circle-inner">
+                            <div class="centro-circulo">
 
                                 <strong>
                                     82%
@@ -532,12 +719,10 @@
 
                             </div>
 
+
                         </div>
 
-
-                        <!-- TEXTO -->
-
-                        <div class="compliance-text">
+                        <div class="texto-cumplimiento">
 
                             <h4>
                                 ¡Buen trabajo!
@@ -551,79 +736,106 @@
 
                         </div>
 
+
                     </div>
 
+
                 </div>
+
 
             </div>
 
 
-            <!-- ALERTAS -->
-
             <div class="col-12 col-xl-7">
 
-                <div class="card dashboard-card alerts-card">
 
-                    <div class="card-header-custom">
+                <div class="tarjeta-dashboard tarjeta-alertas">
+
+
+                    <div class="encabezado-tarjeta">
 
                         <h3>
+
                             <i class="bi bi-bell"></i>
+
                             Alertas
+
                         </h3>
 
                     </div>
 
 
-                    <div class="alerts-list">
+
+                    <div class="lista-alertas">
 
 
-                        <div class="alert-item">
+                        <div class="elemento-alerta">
 
-                            <div class="alert-icon">
+
+                            <div class="icono-alerta">
+
                                 <i class="bi bi-bell"></i>
+
                             </div>
+
 
                             <span>
                                 Capacitaciones próximas a vencer
                             </span>
 
+
                             <strong>
                                 3
                             </strong>
 
+
                         </div>
 
+                        <div class="elemento-alerta">
 
-                        <div class="alert-item">
 
-                            <div class="alert-icon">
+                            <div class="icono-alerta">
+
                                 <i class="bi bi-bell"></i>
+
                             </div>
+
 
                             <span>
                                 Inspecciones pendientes
                             </span>
 
+
                             <strong>
                                 2
                             </strong>
 
+
                         </div>
 
 
-                        <div class="alert-item">
 
-                            <div class="alert-icon">
+                        <!-- ALERTA 3 -->
+
+                        <div class="elemento-alerta">
+
+
+                            <div class="icono-alerta">
+
                                 <i class="bi bi-bell"></i>
+
                             </div>
+
 
                             <span>
                                 Documento por actualizar
                             </span>
 
+
                             <strong>
                                 1
                             </strong>
+
 
                         </div>
 
@@ -631,43 +843,51 @@
                     </div>
 
 
-                    <a href="#" class="view-alerts">
+
+                    <a
+                        href="#"
+                        class="ver-alertas"
+                    >
                         Ver todas las alertas >
                     </a>
 
+
                 </div>
 
+
             </div>
+
 
         </section>
 
 
-        <!-- ======================================
-             ACTIVIDADES + ACCESOS RÁPIDOS
-        ======================================= -->
-
         <section class="row g-3">
-
-
-            <!-- ACTIVIDADES -->
 
             <div class="col-12 col-xl-5">
 
-                <div class="card dashboard-card activities-card">
 
-                    <div class="card-header-custom">
+                <div class="tarjeta-dashboard tarjeta-actividades">
+
+
+                    <div class="encabezado-tarjeta">
 
                         <h3>
+
                             <i class="bi bi-calendar-event"></i>
+
                             Actividades próximas
+
                         </h3>
 
                     </div>
 
 
+
                     <div class="table-responsive">
 
-                        <table class="table activity-table">
+
+                        <table class="table tabla-actividades">
+
 
                             <thead>
 
@@ -696,6 +916,7 @@
 
                             <tbody>
 
+
                                 <tr>
 
                                     <td>
@@ -703,7 +924,7 @@
                                     </td>
 
                                     <td>
-                                        Capacitación en Trabajo...
+                                        Capacitación en Trabajo
                                     </td>
 
                                     <td>
@@ -711,9 +932,11 @@
                                     </td>
 
                                     <td>
-                                        <span class="status status-next">
+
+                                        <span class="estado estado-proxima">
                                             Próxima
                                         </span>
+
                                     </td>
 
                                 </tr>
@@ -734,9 +957,11 @@
                                     </td>
 
                                     <td>
-                                        <span class="status status-pending">
+
+                                        <span class="estado estado-pendiente">
                                             Pendiente
                                         </span>
+
                                     </td>
 
                                 </tr>
@@ -757,9 +982,11 @@
                                     </td>
 
                                     <td>
-                                        <span class="status status-completed">
+
+                                        <span class="estado estado-programada">
                                             Programada
                                         </span>
+
                                     </td>
 
                                 </tr>
@@ -772,7 +999,7 @@
                                     </td>
 
                                     <td>
-                                        Actualización Matriz de...
+                                        Actualización Matriz
                                     </td>
 
                                     <td>
@@ -780,114 +1007,136 @@
                                     </td>
 
                                     <td>
-                                        <span class="status status-pending">
+
+                                        <span class="estado estado-pendiente">
                                             Pendiente
                                         </span>
+
                                     </td>
 
                                 </tr>
 
+
                             </tbody>
+
 
                         </table>
 
+
                     </div>
+
 
                 </div>
 
+
             </div>
+
 
 
             <!-- ACCESOS RÁPIDOS -->
 
             <div class="col-12 col-xl-7">
 
-                <div class="card dashboard-card quick-access-card">
 
-                    <div class="card-header-custom">
+                <div class="tarjeta-dashboard tarjeta-accesos">
+
+
+                    <div class="encabezado-tarjeta">
 
                         <h3>
+
                             <i class="bi bi-lightning-charge"></i>
+
                             Accesos rápidos
+
                         </h3>
 
                     </div>
 
 
-                    <div class="quick-access-container">
+
+                    <div class="contenedor-accesos">
 
 
                         <!-- EMPLEADOS -->
 
-                        <a href="#" class="quick-access-item">
+                        <a
+                            href="empleados.html"
+                            class="acceso-rapido"
+                        >
 
-                            <div class="quick-icon">
+                            <div class="icono-acceso">
+
                                 <i class="bi bi-people"></i>
+
                             </div>
 
                             <span>
                                 Empleados
                             </span>
 
-                            <div class="quick-line"></div>
+                            <div class="linea-acceso"></div>
 
                         </a>
 
 
+
                         <!-- CAPACITACIONES -->
 
-                        <a href="#" class="quick-access-item">
+                        <a
+                            href="capacitaciones.html"
+                            class="acceso-rapido"
+                        >
 
-                            <div class="quick-icon">
+                            <div class="icono-acceso">
+
                                 <i class="bi bi-book"></i>
+
                             </div>
 
                             <span>
                                 Capacitaciones
                             </span>
 
-                            <div class="quick-line"></div>
+                            <div class="linea-acceso"></div>
 
                         </a>
 
 
+
                         <!-- INSPECCIONES -->
 
-                        <a href="#" class="quick-access-item">
+                        <a
+                            href="inspecciones.html"
+                            class="acceso-rapido"
+                        >
 
-                            <div class="quick-icon">
+                            <div class="icono-acceso">
+
                                 <i class="bi bi-clipboard-check"></i>
+
                             </div>
 
                             <span>
                                 Inspecciones
                             </span>
 
-                            <div class="quick-line"></div>
+                            <div class="linea-acceso"></div>
 
                         </a>
 
-
                     </div>
-
                 </div>
-
             </div>
-
         </section>
-
     </main>
-
 </div>
 
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+></script>
 
-<!-- ==========================================
-     BOOTSTRAP JS
-=========================================== -->
-
-<script 
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
-</script>
 
 </body>
+
 </html>
